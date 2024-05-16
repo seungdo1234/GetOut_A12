@@ -12,7 +12,7 @@
 <br/>
 
 ## :bulb: 소개
-| 이름  | Github|블로그|
+| 이름  | 직책 | Github|블로그|
 |-----|---| ---|---|
 | 곽경훈 | 팀장 |<a href="https://github.com/seungdo1234">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>|https://deff-dev.tistory.com
 | 지승도 | 팀원 |<a href="https://github.com/seungdo1234">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>|https://deff-dev.tistory.com
