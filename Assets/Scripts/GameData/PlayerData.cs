@@ -13,4 +13,5 @@ public class PlayerData : CharacterData
     {
         power++;
     }
+    
 }
