@@ -305,6 +305,7 @@ MonoBehaviour:
   maxHealth: 0
   curHealth: 0
   playerName: 
+  power: 0
   bulletNum: 0
   bulletAngle: 0
 --- !u!1 &12913876
