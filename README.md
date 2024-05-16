@@ -1,2 +1,50 @@
-# GetOut_A12
- 내일배움캠프 Unity 4기 6주차 팀 프로젝트
+# Project_GetOut - by.A12
+
+
+<br/>
+<br/>
+
+<p align="center"> ** Project_GetOut **  </p>
+
+##### <p align="center"> <b> _with 내일배움캠프 5주차 팀프로젝트_ </b>
+
+
+<br/>
+
+## :bulb: 소개
+| 이름  | Github|블로그|
+|-----|---| ---|---|
+| 곽경훈 | 팀장 |<a href="https://github.com/seungdo1234">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>|https://deff-dev.tistory.com
+| 지승도 | 팀원 |<a href="https://github.com/seungdo1234">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>|https://deff-dev.tistory.com
+| 박인효 | 팀원 | <a href="https://github.com/seungdo1234">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>|https://deff-dev.tistory.com
+| 박현호 | 팀원 | <a href="https://github.com/seungdo1234">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>|https://deff-dev.tistory.com
+| 금재은 | 팀원 |<a href="https://github.com/seungdo1234">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>|https://deff-dev.tistory.com
+---
+
+## :bulb: 프로젝트  
+
+ `Info` **Project_GetOut**
+
+ `Stack` **Unity/C#**   
+
+ `Made by` **A12** 
+ 
+
+---
+
+## :bulb: 플레이 영상
+
+
+
+
+---
+
+
+## :bulb: 다이어그램
+
+
+
+--- 
+
+## :bulb: 요구사항
+
