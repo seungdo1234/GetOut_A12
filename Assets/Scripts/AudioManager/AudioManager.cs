@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
     AudioSource[] sfxPlayers;  //효과음과 관련된 클립
     int channelIndex;
 
-    public enum Sfx { EnemyHit, PlayerAtk, PlayerHit }
+    public enum Sfx { EnemyHit, PlayerAtk, PlayerHit } //적군 타격, 플레이어 공격, 플레이어 타격
 
 
     private void Awake()
@@ -50,7 +50,7 @@ public class AudioManager : MonoBehaviour
         for (int index = 0; index < sfxPlayers.Length; index++) //모든 효과음 오디오 소스 생성하면서 저장
         {
             sfxPlayers[index] = sfxobject.AddComponent<AudioSource>();
-            sfxPlayers[index].playOnAwake = false ;
+            sfxPlayers[index].playOnAwake = false;
             sfxPlayers[index].volume = sfxVolume;
         }
 
@@ -58,7 +58,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBgm(bool isplay) //배경음 재생 함수
     {
-        if(isplay)
+        if (isplay)
         {
             bgmPlayer.Play();
         }
