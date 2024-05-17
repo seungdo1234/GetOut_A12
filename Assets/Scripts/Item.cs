@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    EItemType itemType;
+    EWeaponType itemType;
     [SerializeField] private float dropSpeed = 1.0f;
     Rigidbody2D rd;
 
