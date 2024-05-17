@@ -7,10 +7,10 @@ public class PoolManager : MonoBehaviour
     [System.Serializable]
     public class Pool
     {
-        public string tag;
-        public GameObject prefab;
-        public int size;
-        public Transform parentTransform;
+        public string tag; // key 값
+        public GameObject prefab; // 실제 생성될 오브젝트
+        public int size; // 한번에 몇개를 생성할 것인지
+        public Transform parentTransform; // 부모 오브젝트
     }
 
     [Header("# Pool Info")]
@@ -32,7 +32,7 @@ public class PoolManager : MonoBehaviour
         }
     }
 
-    private void AddPoolObject(string tag)
+    private void AddPoolObject(string tag) // 프리팹 생성
     {
         Pool pool = pools.Find(obj => tag == obj.tag);
         
