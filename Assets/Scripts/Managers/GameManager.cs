@@ -6,6 +6,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    [SerializeField] private PoolManager poolManager;
+    public PoolManager Pool => poolManager;
     
     private void Awake()
     {
