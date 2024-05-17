@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5af48dc183490e4ab99e06554528f94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   bgmClip: {fileID: 8300000, guid: 033766cc31c97904bae4404b8a079544, type: 3}
   bgmVolume: 0.2
   bgmPlayer: {fileID: 0}
@@ -255,6 +256,19 @@ MonoBehaviour:
   channels: 16
   sfxPlayers: []
   channelIndex: 0
+=======
+  bgmClip: {fileID: 0}
+  bgmVolume: 0.2
+  sfxClips:
+  - {fileID: 8300000, guid: ccd5e50cd160b454ba330a306aa75840, type: 3}
+  - {fileID: 8300000, guid: 021118eae6dfd6741ae492379523a1f4, type: 3}
+  - {fileID: 8300000, guid: 1520f8ecf969b7841911d5866ec7f40f, type: 3}
+  - {fileID: 8300000, guid: 0bd7558870a24af4fa956ff3e558dd48, type: 3}
+  - {fileID: 8300000, guid: efcd19335ea70044bbe559df413f3c41, type: 3}
+  - {fileID: 8300000, guid: 46bec00664350524aac8431a77144d58, type: 3}
+  sfxVolume: 0.5
+  channels: 16
+>>>>>>> Stashed changes
 --- !u!4 &732528844
 Transform:
   m_ObjectHideFlags: 0
