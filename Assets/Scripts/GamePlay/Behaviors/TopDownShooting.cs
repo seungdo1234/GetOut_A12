@@ -6,7 +6,7 @@ public class TopDownShooting : MonoBehaviour
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
     
-    protected void Shooting(CharacterData characterData)
+    protected void Shooting(CharacterData characterData, string tag)
     {
         // 몇 도 만큼 각도를 띄울건지
         float projectilesAngleSpace = characterData.BulletAngle;
@@ -20,13 +20,13 @@ public class TopDownShooting : MonoBehaviour
         for (int i = 0; i < numberOfProjectilePerShot; i++) 
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            CreateBullet(characterData,angle);
+            CreateBullet(characterData, angle, tag);
         }
     }
 
-    private void CreateBullet(CharacterData characterData,float angle)
+    private void CreateBullet(CharacterData characterData,float angle, string tag)
     {
-        PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool("Bullet");
+        PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(tag);
         bullet.transform.position = weaponPivot.position;
         bullet.transform.Rotate(0,0,angle);
         bullet.BulletInit(characterData.AtkDamage,characterData.BulletSpeed, targetLayer);
