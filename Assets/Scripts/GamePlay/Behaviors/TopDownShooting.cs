@@ -1,11 +1,18 @@
+using System;
 using UnityEngine;
 
 public class TopDownShooting : MonoBehaviour
 {
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
-    
-    protected void Shooting(FlightStat flightStat, string tag)
+
+    private EPoolObjectType poolObjectType;
+    protected virtual void Awake()
+    {
+        poolObjectType = EPoolObjectType.Bullet;
+    }
+
+    protected void Shooting(FlightStat flightStat)
     {
         // 몇 도 만큼 각도를 띄울건지
         float projectilesAngleSpace = flightStat.BulletAngle;
@@ -19,13 +26,13 @@ public class TopDownShooting : MonoBehaviour
         for (int i = 0; i < numberOfProjectilePerShot; i++)
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            CreateBullet(flightStat, angle, tag);
+            CreateBullet(flightStat, angle);
         }
     }
 
-    private void CreateBullet(FlightStat flightStat, float angle, string tag)
+    private void CreateBullet(FlightStat flightStat, float angle)
     {
-        PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(tag);
+        PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(poolObjectType.ToString());
         bullet.transform.position = weaponPivot.position;
         bullet.transform.Rotate(0, 0, angle);
         bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);

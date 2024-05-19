@@ -6,8 +6,9 @@ public class AutoBasicAttackHandler : TopDownShooting
     private Coroutine scoutAttackCoroutine;
     private FlightStatHandler flightStat;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         flightStat = GetComponent<FlightStatHandler>();
     }
 
@@ -30,10 +31,9 @@ public class AutoBasicAttackHandler : TopDownShooting
     {
         WaitForSeconds wait = new WaitForSeconds(flightStat.CurrentStat.AtkDelay);
 
-        while (true)
+        while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
-            if (flightStat.CurrentStat.EFlightStatus != EFlightStatus.Alive) break;
-            Shooting(flightStat.CurrentStat, "Bullet");
+            Shooting(flightStat.CurrentStat);
             yield return wait;
         }
     }

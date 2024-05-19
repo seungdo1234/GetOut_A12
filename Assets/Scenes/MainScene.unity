@@ -273,6 +273,10 @@ PrefabInstance:
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 5921209449616409360, guid: 238dd772b7f51e241ac24a98e225ab86, type: 3}
+      propertyPath: baseStat.MaxHealth
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921209449616409360, guid: 238dd772b7f51e241ac24a98e225ab86, type: 3}
       propertyPath: baseStat.BulletSpeed
       value: -5
       objectReference: {fileID: 0}
@@ -538,7 +542,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 87775265348895361, guid: cf1ba16130ec3fd42b1e45884e44aef8, type: 3}
       propertyPath: m_Name
-      value: Player_Update
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 360358192447504791, guid: cf1ba16130ec3fd42b1e45884e44aef8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -581,8 +585,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2137473693146402215, guid: cf1ba16130ec3fd42b1e45884e44aef8, type: 3}
+      propertyPath: baseStat.AtkDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137473693146402215, guid: cf1ba16130ec3fd42b1e45884e44aef8, type: 3}
       propertyPath: baseStat.BulletSpeed
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
