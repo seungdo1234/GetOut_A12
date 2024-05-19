@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class CharacterData : MonoBehaviour, IDamageable
+public class FlightData : MonoBehaviour, IDamageable
 {
-    [Header("# Character Stat")]
+    [Header("# Fligth Stat")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float atkDelay;
     [SerializeField] private float atkDamage;

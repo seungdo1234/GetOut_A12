@@ -24,13 +24,13 @@ public class AutoBasicAttackHandler : TopDownShooting
     }
     private IEnumerator AutoBasicAttackCoroutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(CharacterDataManager.Instance.PlayerData.AtkDelay);
+        WaitForSeconds wait = new WaitForSeconds(FlightDataManager.Instance.PlayerData.AtkDelay);
         
         while (true)
         {
-            if (CharacterDataManager.Instance.PlayerData.EFlightStatus != EFlightStatus.Alive) break;
+            if (FlightDataManager.Instance.PlayerData.EFlightStatus != EFlightStatus.Alive) break;
             
-            Shooting(CharacterDataManager.Instance.PlayerData, "Bullet");
+            Shooting(FlightDataManager.Instance.PlayerData, "Bullet");
             yield return wait;
         }
         Debug.Log("Out");

@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
 [Serializable]
-public class CharacterStat
+public class FlightStat
 {
-    [Header("# Character Stat")]
+    [Header("# Flight Stat")]
     public float MoveSpeed;
     public float AtkDelay;
     [Range(1f,1f)]public float AtkDamage;
