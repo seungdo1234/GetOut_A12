@@ -28,10 +28,17 @@ public class Bullet : PoolObject
     {
         if (IsLayerMatched(targetLayer.value, other.gameObject.layer))
         {
+            /*
             IDamageable damageable = other.GetComponent<IDamageable>();
             if (damageable != null)
             {
                 damageable.TakeDamage(damage);
+            }
+            */
+            HealthSystem healthSystem = other.GetComponent<HealthSystem>();
+            if (healthSystem != null)
+            {
+                healthSystem.ChangeHealth(-damage);
             }
             DisableBullet();
         }

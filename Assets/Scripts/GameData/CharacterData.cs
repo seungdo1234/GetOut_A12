@@ -16,6 +16,7 @@ public class CharacterData : MonoBehaviour, IDamageable
     public float MoveSpeed => moveSpeed;
     public float AtkDamage => atkDamage;
     public float AtkDelay => atkDelay;
+    public float MaxHealth => maxHealth;
     public int BulletNum => bulletNum;
     public float BulletAngle => bulletAngle;
     public float BulletSpeed => bulletSpeed;

@@ -244,11 +244,13 @@ GameObject:
   - component: {fileID: 582470058656061686}
   - component: {fileID: 3902702483397103377}
   - component: {fileID: 1195633183974129031}
-  - component: {fileID: 3701329723329511800}
+  - component: {fileID: 944207610741677926}
   - component: {fileID: 8569254846999158526}
-  - component: {fileID: 8373146036590448970}
+  - component: {fileID: 5921209449616409360}
+  - component: {fileID: 263631638447748584}
+  - component: {fileID: 186832400871240150}
   m_Layer: 7
-  m_Name: Monster
+  m_Name: Scout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c908ca773a1795d4c8af2c648604af55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3701329723329511800
+--- !u!114 &944207610741677926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -376,19 +378,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8897152920480680831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b472ff3b6a640bab49c267262d1d2d4, type: 3}
+  m_Script: {fileID: 11500000, guid: f8df8419c620db34381a710ce24c25cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  atkDelay: 0.5
-  atkDamage: 1
-  maxHealth: 1
-  curHealth: 1
-  bulletNum: 1
-  bulletAngle: 3.5
-  bulletSpeed: 5
-  Eflightstatus: 0
-  E_enemyType: 1
 --- !u!114 &8569254846999158526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +397,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
---- !u!114 &8373146036590448970
+--- !u!114 &5921209449616409360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,6 +406,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 8897152920480680831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1290508b2c8a1544b844d6ca2a607ab0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5122f4844d8174b4faa9abdcb58c6778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseStat:
+    MoveSpeed: 5
+    AtkDelay: 0.5
+    AtkDamage: 0
+    MaxHealth: 1
+    BulletNum: 1
+    BulletAngle: 0
+    BulletSpeed: 5
+    EFlightStatus: 0
+  statModifiers: []
+--- !u!114 &263631638447748584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8897152920480680831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e9e1c36c57c4b4faf23dfa1fb10b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curHealth: 0
+--- !u!114 &186832400871240150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8897152920480680831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02d9cf40ac71e644b46f0ffc2aaa619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

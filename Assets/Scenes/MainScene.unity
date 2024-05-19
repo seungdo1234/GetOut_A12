@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &153157805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6255746309986217479, guid: 87b7dafb78df7b543862e42e15510a99, type: 3}
+  m_PrefabInstance: {fileID: 1153521281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &280333093
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,11 +383,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5299566713958123944, guid: 87b7dafb78df7b543862e42e15510a99, type: 3}
       propertyPath: curHealth
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5299566713958123944, guid: 87b7dafb78df7b543862e42e15510a99, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6255746309986217479, guid: 87b7dafb78df7b543862e42e15510a99, type: 3}
       propertyPath: m_Name
@@ -395,19 +400,60 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6255746309986217479, guid: 87b7dafb78df7b543862e42e15510a99, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1351165975}
+    - targetCorrespondingSourceObject: {fileID: 6255746309986217479, guid: 87b7dafb78df7b543862e42e15510a99, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1351165974}
   m_SourcePrefab: {fileID: 100100000, guid: 87b7dafb78df7b543862e42e15510a99, type: 3}
 --- !u!114 &1351165964 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5299566713958123944, guid: 87b7dafb78df7b543862e42e15510a99, type: 3}
   m_PrefabInstance: {fileID: 1153521281}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 153157805}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e7e59cc662b47cbb7682694147a8b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1351165974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153157805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e9e1c36c57c4b4faf23dfa1fb10b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curHealth: 0
+--- !u!114 &1351165975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153157805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5122f4844d8174b4faa9abdcb58c6778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseStat:
+    MoveSpeed: 0
+    AtkDelay: 0
+    AtkDamage: 0
+    MaxHealth: 0
+    BulletNum: 0
+    BulletAngle: 0
+    BulletSpeed: 0
+    EFlightStatus: 0
+  statModifiers: []
 --- !u!1 &1383086084
 GameObject:
   m_ObjectHideFlags: 0
