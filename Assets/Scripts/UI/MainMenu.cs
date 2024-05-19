@@ -43,12 +43,6 @@ public class NewBehaviourScript : MonoBehaviour
 #endif
     }
 
-    // PlayerName 버튼 누르면 2~10글자의 이름 입력을 저장하기. 이후 어떻게 호출할 수 있는지 연구
-    public void OnclickPlayerName()
-    {
-        Debug.Log("플레이어 이름 입력");
-    }
-
 }
 
 
