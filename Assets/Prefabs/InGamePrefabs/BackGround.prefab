@@ -443,7 +443,7 @@ MonoBehaviour:
   - {fileID: 4006419623212620444}
   - {fileID: 8501063683356489896}
   - {fileID: 3679268813451100722}
-  scrollSpeed: 3
+  scrollSpeed: 0.5
 --- !u!1 &8321647376752700386
 GameObject:
   m_ObjectHideFlags: 0
