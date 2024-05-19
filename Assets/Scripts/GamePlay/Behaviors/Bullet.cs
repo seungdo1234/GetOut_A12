@@ -46,7 +46,7 @@ public class Bullet : PoolObject
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("BackGround"))
+        if (other.CompareTag("Camera"))
         {
             DisableBullet();
         }
