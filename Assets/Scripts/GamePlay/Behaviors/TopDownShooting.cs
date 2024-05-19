@@ -28,13 +28,6 @@ public class TopDownShooting : MonoBehaviour
         PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(tag);
         bullet.transform.position = weaponPivot.position;
         bullet.transform.Rotate(0, 0, angle);
-        if(flightStat.BulletAnimator != null)
-        {
-            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);
-        }
-        else
-        {
-            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletOverrideAnimator, targetLayer);
-        }
+        bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);
     }
 }
