@@ -990,7 +990,7 @@ MonoBehaviour:
   pools:
   - tag: Bullet
     prefab: {fileID: 1450614913314674808, guid: 43072050348739c4fa0bbcb12f68cbd2, type: 3}
-    size: 16
+    size: 30
     parentTransform: {fileID: 3752394092259737820}
 --- !u!1 &4893161532507481077
 GameObject:

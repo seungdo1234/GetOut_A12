@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,8 +12,8 @@ public class PoolManager : MonoBehaviour
         public Transform parentTransform; // 부모 오브젝트
     }
 
-    [Header("# Pool Info")]
-    [SerializeField] private List<Pool> pools = new List<Pool>();
+    [Header("# Pool Info")] 
+    [SerializeField] private List<Pool> pools;
     private Dictionary<string, List<PoolObject>> poolDictionary;
     
     
@@ -59,7 +57,7 @@ public class PoolManager : MonoBehaviour
         
         for (int i = 0; i < poolDictionary[tag].Count; i++)
         {
-            if (!poolDictionary[tag][i].gameObject.activeSelf)
+            if (!poolDictionary[tag][i].gameObject.activeSelf) // 비활성화된 오브젝트를 찾았을 때
             {
                 poolObject = poolDictionary[tag][i];
                 break;
@@ -72,9 +70,8 @@ public class PoolManager : MonoBehaviour
             }
         }
         
-        poolObject.gameObject.SetActive(true);
+        poolObject.gameObject.SetActive(true); // 활성화
         
         return poolObject;
     }
-    
 }
