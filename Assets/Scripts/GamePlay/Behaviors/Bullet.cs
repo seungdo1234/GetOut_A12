@@ -23,7 +23,7 @@ public class Bullet : PoolObject
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (IsLayerMatched(other.gameObject.layer ,targetLayer.value))
+        if (IsLayerMatched(targetLayer.value, other.gameObject.layer ))
         {
             IDamageable damageable = other.GetComponent<IDamageable>();
             if (damageable != null)
