@@ -245,10 +245,10 @@ GameObject:
   - component: {fileID: 3902702483397103377}
   - component: {fileID: 1195633183974129031}
   - component: {fileID: 944207610741677926}
-  - component: {fileID: 8569254846999158526}
   - component: {fileID: 5921209449616409360}
   - component: {fileID: 263631638447748584}
   - component: {fileID: 186832400871240150}
+  - component: {fileID: 8569254846999158526}
   m_Layer: 7
   m_Name: Scout
   m_TagString: Untagged
@@ -381,22 +381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8df8419c620db34381a710ce24c25cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8569254846999158526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8897152920480680831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3771a69bb2511b5489864299c6be4ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponPivot: {fileID: 8096113195116866010}
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!114 &5921209449616409360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,6 +402,8 @@ MonoBehaviour:
     BulletAngle: 0
     BulletSpeed: 5
     EFlightStatus: 0
+    BulletAnimator: {fileID: 0}
+    BulletOverrideAnimator: {fileID: 22100000, guid: 03c8b8b038f93584f992d850e9a41b25, type: 2}
   statModifiers: []
 --- !u!114 &263631638447748584
 MonoBehaviour:
@@ -444,3 +430,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b02d9cf40ac71e644b46f0ffc2aaa619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8569254846999158526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8897152920480680831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3771a69bb2511b5489864299c6be4ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPivot: {fileID: 8096113195116866010}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64

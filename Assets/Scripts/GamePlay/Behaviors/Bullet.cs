@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 
@@ -10,16 +11,30 @@ public class Bullet : PoolObject
     [SerializeField]private LayerMask targetLayer;
     private float damage;
     private Quaternion origRotation;
+    private Animator anim;
     
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         origRotation = transform.rotation;
     }
 
-    public override void BulletInit( float damage,float bulletSpeed ,LayerMask targetLayer)
+    // Enemy (위에서 아래로)
+    public override void BulletInit(float damage, float bulletSpeed, AnimatorOverrideController animator, LayerMask targetLayer)
+    {
+        rigid.velocity = -transform.up * bulletSpeed;
+        anim.runtimeAnimatorController = animator;
+        this.targetLayer = targetLayer;
+        this.damage = damage;
+    }
+
+
+    // Player (아래에서 위로)
+    public override void BulletInit(float damage, float bulletSpeed, AnimatorController animator, LayerMask targetLayer)
     {
         rigid.velocity = transform.up * bulletSpeed;
+        anim.runtimeAnimatorController = animator;
         this.targetLayer = targetLayer;
         this.damage = damage;
     }
@@ -28,13 +43,6 @@ public class Bullet : PoolObject
     {
         if (IsLayerMatched(targetLayer.value, other.gameObject.layer ))
         {
-            /*
-            IDamageable damageable = other.GetComponent<IDamageable>();
-            if (damageable != null)
-            {
-                damageable.TakeDamage(damage);
-            }
-            */
             HealthSystem healthSystem = other.GetComponent<HealthSystem>();
             if (healthSystem != null)
             {
