@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,7 +23,7 @@ public class PoolManager : MonoBehaviour
     {
         // 딕셔너리 초기화
         poolDictionary = new Dictionary<string, List<PoolObject>>();
-
+        
         // pools에 있는 모든 오브젝트를 탐색하고 정해놓은 size만큼 프리팹을 미리 만들어 놓음
         foreach (Pool pool in pools)
         {
@@ -32,6 +33,7 @@ public class PoolManager : MonoBehaviour
         }
     }
 
+ 
     private void AddPoolObject(string tag) // 프리팹 생성
     {
         Pool pool = pools.Find(obj => tag == obj.tag);
