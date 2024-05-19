@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.Animations;
 using UnityEngine;
 [Serializable]
 public class FlightStat
@@ -12,4 +13,8 @@ public class FlightStat
     [Range(0f, 360f)] public float BulletAngle;
     [Range(1f, 20f)] public float BulletSpeed;
     public EFlightStatus EFlightStatus;
+
+    [Header("# Bullet Animator")]
+    public AnimatorController BulletAnimator;
+    public AnimatorOverrideController BulletOverrideAnimator;
 }
