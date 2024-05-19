@@ -15,11 +15,11 @@ public class AutoBasicAttackHandler : TopDownShooting
 
     public void PlayAutoBasicAttack()
     {
+        // 현재 비행기가 살아있는 경우에만 총기 발사
         if (attackCoroutine != null)
         {
             StopCoroutine(attackCoroutine);
         }
-
         attackCoroutine = StartCoroutine(AutoBasicAttackCoroutine());
     }
     private IEnumerator AutoBasicAttackCoroutine()
@@ -28,13 +28,16 @@ public class AutoBasicAttackHandler : TopDownShooting
         
         while (true)
         {
-            Shooting(CharacterDataManager.Instance.PlayerData);
+            if (CharacterDataManager.Instance.PlayerData.EFlightStatus != EFlightStatus.Alive) break;
+            
+            Shooting(CharacterDataManager.Instance.PlayerData, "Bullet");
             yield return wait;
         }
+        Debug.Log("Out");
     }
 
     private void ShootBullet()
     {
-        
+
     }
 }
