@@ -6,12 +6,12 @@ public class TopDownShooting : MonoBehaviour
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
     
-    protected void Shooting(CharacterData characterData, string tag)
+    protected void Shooting(FlightData flightData, string tag)
     {
         // 몇 도 만큼 각도를 띄울건지
-        float projectilesAngleSpace = characterData.BulletAngle;
+        float projectilesAngleSpace = flightData.BulletAngle;
         // 한 번에 몇발 나갈 건지
-        int numberOfProjectilePerShot = characterData.BulletNum;
+        int numberOfProjectilePerShot = flightData.BulletNum;
         
         // 최소 각 구하기
         float minAngle = -(numberOfProjectilePerShot / 2f) * projectilesAngleSpace +
@@ -20,17 +20,17 @@ public class TopDownShooting : MonoBehaviour
         for (int i = 0; i < numberOfProjectilePerShot; i++) 
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            CreateBullet(characterData, angle, tag);
+            CreateBullet(flightData, angle, tag);
         }
     }
 
     // Conflict 방지를 위한 추가 제작 [매개변수만 수정]
-    protected void Shooting(CharacterStat characterStat, string tag)
+    protected void Shooting(FlightStat flightStat, string tag)
     {
         // 몇 도 만큼 각도를 띄울건지
-        float projectilesAngleSpace = characterStat.BulletAngle;
+        float projectilesAngleSpace = flightStat.BulletAngle;
         // 한 번에 몇발 나갈 건지
-        int numberOfProjectilePerShot = characterStat.BulletNum;
+        int numberOfProjectilePerShot = flightStat.BulletNum;
 
         // 최소 각 구하기
         float minAngle = -(numberOfProjectilePerShot / 2f) * projectilesAngleSpace +
@@ -39,24 +39,24 @@ public class TopDownShooting : MonoBehaviour
         for (int i = 0; i < numberOfProjectilePerShot; i++)
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            CreateBullet(characterStat, angle, tag);
+            CreateBullet(flightStat, angle, tag);
         }
     }
 
-    private void CreateBullet(CharacterData characterData,float angle, string tag)
+    private void CreateBullet(FlightData flightData,float angle, string tag)
     {
         PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(tag);
         bullet.transform.position = weaponPivot.position;
         bullet.transform.Rotate(0,0,angle);
-        bullet.BulletInit(characterData.AtkDamage,characterData.BulletSpeed, targetLayer);
+        bullet.BulletInit(flightData.AtkDamage,flightData.BulletSpeed, targetLayer);
     }
 
     // Conflict 방지를 위한 추가 제작 [매개변수만 수정]
-    private void CreateBullet(CharacterStat characterStat, float angle, string tag)
+    private void CreateBullet(FlightStat flightStat, float angle, string tag)
     {
         PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(tag);
         bullet.transform.position = weaponPivot.position;
         bullet.transform.Rotate(0, 0, angle);
-        bullet.BulletInit(characterStat.AtkDamage, characterStat.BulletSpeed, targetLayer);
+        bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, targetLayer);
     }
 }

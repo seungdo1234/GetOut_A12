@@ -4,11 +4,11 @@ using UnityEngine;
 public class AutoScoutAttackHandler : TopDownShooting
 {
     private Coroutine scoutAttackCoroutine;
-    private CharacterStatHandler characterStat;
+    private FlightStatHandler flightStat;
 
     private void Awake()
     {
-        characterStat = GetComponent<CharacterStatHandler>();
+        flightStat = GetComponent<FlightStatHandler>();
     }
 
     private void Start()
@@ -28,13 +28,13 @@ public class AutoScoutAttackHandler : TopDownShooting
     }
     private IEnumerator AutoScoutAttackCoroutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(characterStat.CurrentStat.AtkDelay);
+        WaitForSeconds wait = new WaitForSeconds(flightStat.CurrentStat.AtkDelay);
 
         while (true)
         {
-            if (characterStat.CurrentStat.EFlightStatus != EFlightStatus.Alive) break;
+            if (flightStat.CurrentStat.EFlightStatus != EFlightStatus.Alive) break;
             
-            Shooting(characterStat.CurrentStat, "EnemyBullet");
+            Shooting(flightStat.CurrentStat, "EnemyBullet");
             yield return wait;
         }
     }

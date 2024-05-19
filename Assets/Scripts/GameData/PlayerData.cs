@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerData : CharacterData
+public class PlayerData : FlightData
 {
     [Header("# Player Stat")]
     [SerializeField] private string playerName;
