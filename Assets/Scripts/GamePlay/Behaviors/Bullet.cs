@@ -9,9 +9,12 @@ public class Bullet : PoolObject
     private Rigidbody2D rigid;
     [SerializeField]private LayerMask targetLayer;
     private float damage;
+    private Quaternion origRotation;
+    
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
+        origRotation = transform.rotation;
     }
 
     public override void BulletInit( float damage,float bulletSpeed ,LayerMask targetLayer)
@@ -23,12 +26,19 @@ public class Bullet : PoolObject
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (IsLayerMatched(other.gameObject.layer ,targetLayer.value))
+        if (IsLayerMatched(targetLayer.value, other.gameObject.layer ))
         {
+            /*
             IDamageable damageable = other.GetComponent<IDamageable>();
             if (damageable != null)
             {
                 damageable.TakeDamage(damage);
+            }
+            */
+            HealthSystem healthSystem = other.GetComponent<HealthSystem>();
+            if (healthSystem != null)
+            {
+                healthSystem.ChangeHealth(-damage);
             }
             DisableBullet();
         }
@@ -44,7 +54,7 @@ public class Bullet : PoolObject
 
     private void DisableBullet()
     {
-        transform.rotation = Quaternion.Euler(0,0,0);
+        transform.rotation = origRotation;
         gameObject.SetActive(false);
     }
     
