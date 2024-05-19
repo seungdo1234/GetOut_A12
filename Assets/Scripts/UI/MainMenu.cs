@@ -18,16 +18,20 @@ public class NewBehaviourScript : MonoBehaviour
 
     public void OnCllickNewGame()
     {
-
+        Debug.Log("새 게임");
     }
 
     public void OnclickQuit()
     {
-
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
     public void OnclickPlayerName()
     {
-
+        Debug.Log("플레이어 이름 입력");
     }
 }
