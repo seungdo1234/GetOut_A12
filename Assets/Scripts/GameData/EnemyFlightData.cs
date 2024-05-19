@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class EnemyData : FlightData
+public class EnemyFlightData : FlightData
 {
     [Header("# Enemy Stat")]  
     [SerializeField] private EEnemyType E_enemyType;
