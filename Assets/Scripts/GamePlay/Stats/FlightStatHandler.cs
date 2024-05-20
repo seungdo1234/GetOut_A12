@@ -28,7 +28,6 @@ public class FlightStatHandler : MonoBehaviour
         CurrentStat.BulletSpeed = baseStat.BulletSpeed;
         CurrentStat.EFlightStatus= baseStat.EFlightStatus;
         CurrentStat.BulletAnimator = baseStat.BulletAnimator;
-        CurrentStat.BulletOverrideAnimator = baseStat.BulletOverrideAnimator;
     }
 
     public void Death()

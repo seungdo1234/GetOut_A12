@@ -1,11 +1,12 @@
+using System;
 using UnityEngine;
 
 public class TopDownShooting : MonoBehaviour
 {
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
-    
-    protected void Shooting(FlightStat flightStat, string tag)
+     
+    protected void Shooting(FlightStat flightStat)
     {
         // 몇 도 만큼 각도를 띄울건지
         float projectilesAngleSpace = flightStat.BulletAngle;
@@ -19,22 +20,22 @@ public class TopDownShooting : MonoBehaviour
         for (int i = 0; i < numberOfProjectilePerShot; i++)
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            CreateBullet(flightStat, angle, tag);
+            SpawnBullet(flightStat, angle);
         }
     }
 
-    private void CreateBullet(FlightStat flightStat, float angle, string tag)
+    private void SpawnBullet(FlightStat flightStat, float angle)
     {
-        PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(tag);
-        bullet.transform.position = weaponPivot.position;
-        bullet.transform.Rotate(0, 0, angle);
-        if(flightStat.BulletAnimator != null)
+        Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyConponent<Bullet>();
+        if (bullet != null)
         {
-            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);
+            bullet.transform.position = weaponPivot.position; 
+            bullet.transform.Rotate(0, 0, angle);
+            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);   
         }
         else
         {
-            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletOverrideAnimator, targetLayer);
+            Debug.Log("");
         }
     }
 }

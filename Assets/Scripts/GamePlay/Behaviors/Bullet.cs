@@ -21,17 +21,7 @@ public class Bullet : PoolObject
     }
 
     // Enemy (위에서 아래로)
-    public override void BulletInit(float damage, float bulletSpeed, AnimatorOverrideController animator, LayerMask targetLayer)
-    {
-        rigid.velocity = -transform.up * bulletSpeed;
-        anim.runtimeAnimatorController = animator;
-        this.targetLayer = targetLayer;
-        this.damage = damage;
-    }
-
-
-    // Player (아래에서 위로)
-    public override void BulletInit(float damage, float bulletSpeed, AnimatorController animator, LayerMask targetLayer)
+    public  void BulletInit(float damage, float bulletSpeed, RuntimeAnimatorController animator, LayerMask targetLayer)
     {
         rigid.velocity = transform.up * bulletSpeed;
         anim.runtimeAnimatorController = animator;

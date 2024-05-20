@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class PoolObject : MonoBehaviour
 {
-    public virtual void BulletInit(float damage, float bulletSpeed, AnimatorOverrideController animator, LayerMask targetLayer) { }
-    public virtual void BulletInit(float damage, float bulletSpeed, AnimatorController animator, LayerMask targetLayer) { }
-    
-
-}
+    // PoolObject를 상속받는 자식 클래스로 형변환하는 함수
+    public T ReturnMyConponent<T>() where T : PoolObject
+    {
+        return this as T;
+    }
+} 

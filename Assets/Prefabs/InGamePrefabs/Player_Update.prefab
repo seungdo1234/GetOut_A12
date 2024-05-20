@@ -229,7 +229,6 @@ MonoBehaviour:
     BulletSpeed: 5
     EFlightStatus: 0
     BulletAnimator: {fileID: 9100000, guid: a1f64fc3360f66b478b2ca82b7e7b3ba, type: 2}
-    BulletOverrideAnimator: {fileID: 0}
   statModifiers: []
 --- !u!114 &3088780203460410037
 MonoBehaviour:
