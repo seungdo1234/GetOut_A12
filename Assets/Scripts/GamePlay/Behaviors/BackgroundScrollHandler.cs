@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BackgroundScrollHandler : MonoBehaviour
@@ -29,7 +27,7 @@ public class BackgroundScrollHandler : MonoBehaviour
         Vector3 scrollVec = new Vector3(0, scrollSpeed,0);
         while (true)
         {
-            for (int i = 0; i < backgroundImages.Length; i++)
+            for (int i = 0; i < backgroundImages.Length; i++) // 배경화면 아래로 스크롤
             {
                 backgroundImages[i].position -= scrollVec * Time.deltaTime;
             }
