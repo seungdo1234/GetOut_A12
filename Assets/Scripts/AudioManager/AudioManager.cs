@@ -7,47 +7,47 @@ using UnityEngine.UIElements;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance; //Á¤Àû ¸Ş¸ğ¸®¿¡ ´ã±â À§ÇÑ instance º¯¼ö ¼±¾ğ
+    public static AudioManager instance; //ì •ì  ë©”ëª¨ë¦¬ì— ë‹´ê¸° ìœ„í•œ instance ë³€ìˆ˜ ì„ ì–¸
 
-    [Header("#BGM")]  //¹è°æ À½¾Ç
-    public AudioClip bgmClip; //¹è°æÀ½°ú °ü·ÃµÈ Å¬¸³
-    public float bgmVolume;  //¹è°æÀ½°ú °ü·ÃµÈ º¼·ı     
-    AudioSource bgmPlayer;  //¹è°æÀ½°ú °ü·ÃµÈ ¿Àµğ¿À ¼Ò½º
+    [Header("#BGM")]  //ë°°ê²½ ìŒì•…
+    public AudioClip bgmClip; //ë°°ê²½ìŒê³¼ ê´€ë ¨ëœ í´ë¦½
+    public float bgmVolume;  //ë°°ê²½ìŒê³¼ ê´€ë ¨ëœ ë³¼ë¥¨     
+    AudioSource bgmPlayer;  //ë°°ê²½ìŒê³¼ ê´€ë ¨ëœ ì˜¤ë””ì˜¤ ì†ŒìŠ¤
 
-    [Header("#SFX")] //È¿°úÀ½
-    public AudioClip[] sfxClips; //È¿°úÀ½°ú °ü·ÃµÈ Å¬¸³
-    public float sfxVolume;  //È¿°úÀ½°ú °ü·ÃµÈ Å¬¸³
-    public int channels;  //´Ù¾çÇÑ È¿°úÀ½À» ³¾ ¼ö ÀÖ´Â Ã¤³Î °³¼ö º¯¼ö
-    AudioSource[] sfxPlayers;  //È¿°úÀ½°ú °ü·ÃµÈ Å¬¸³
+    [Header("#SFX")] //íš¨ê³¼ìŒ
+    public AudioClip[] sfxClips; //íš¨ê³¼ìŒê³¼ ê´€ë ¨ëœ í´ë¦½
+    public float sfxVolume;  //íš¨ê³¼ìŒê³¼ ê´€ë ¨ëœ í´ë¦½
+    public int channels;  //ë‹¤ì–‘í•œ íš¨ê³¼ìŒì„ ë‚¼ ìˆ˜ ìˆëŠ” ì±„ë„ ê°œìˆ˜ ë³€ìˆ˜
+    AudioSource[] sfxPlayers;  //íš¨ê³¼ìŒê³¼ ê´€ë ¨ëœ í´ë¦½
     int channelIndex;
 
-    public enum Sfx { EnemyHit, PlayerAtk, PlayerHit } //Àû±º Å¸°İ, ÇÃ·¹ÀÌ¾î °ø°İ, ÇÃ·¹ÀÌ¾î Å¸°İ
+    public enum Sfx { EnemyHit, PlayerAtk, PlayerHit, ItemEqt, ItemRec } //ì êµ° íƒ€ê²©, í”Œë ˆì´ì–´ ê³µê²©, í”Œë ˆì´ì–´ íƒ€ê²©
 
 
     private void Awake()
     {
-        instance = this; //instance ÃÊ±âÈ­
-        Init(); //ÃÊ±âÈ­ ÇÔ¼ö???
+        instance = this; //instance ì´ˆê¸°í™”
+        Init(); //ì´ˆê¸°í™” í•¨ìˆ˜???
     }
 
     void Init()
     {
-        //¹è°æÀ½ ÇÃ·¹ÀÌ¾î ÃÊ±âÈ­
+        //ë°°ê²½ìŒ í”Œë ˆì´ì–´ ì´ˆê¸°í™”
         GameObject bgmobject = new GameObject("BgmPlayer");
-        bgmobject.transform.parent = transform; //¹è°æÀ½À» ´ã´çÇÏ´Â ÀÚ½Ä ¿ÀºêÁ§Æ®
-        bgmPlayer = bgmobject.AddComponent<AudioSource>();  //AddComponentÇÔ¼ö·Î ¿Àµğ¿À ¼Ò½º »ı¼º ÈÄ º¯¼ö¿¡ ÀúÀå
-        bgmPlayer.playOnAwake = false;  //Ä³¸¯ÅÍ ´©¸¦¶§ ¹è°æÀ½¾Ç È°¼ºÈ­
-        bgmPlayer.loop = true;  //¹è°æÀ½¾Ç ·çÇÁ
-        bgmPlayer.volume = bgmVolume; //º¼·ı
+        bgmobject.transform.parent = transform; //ë°°ê²½ìŒì„ ë‹´ë‹¹í•˜ëŠ” ìì‹ ì˜¤ë¸Œì íŠ¸
+        bgmPlayer = bgmobject.AddComponent<AudioSource>();  //AddComponentí•¨ìˆ˜ë¡œ ì˜¤ë””ì˜¤ ì†ŒìŠ¤ ìƒì„± í›„ ë³€ìˆ˜ì— ì €ì¥
+        bgmPlayer.playOnAwake = false;  //ìºë¦­í„° ëˆ„ë¥¼ë•Œ ë°°ê²½ìŒì•… í™œì„±í™”
+        bgmPlayer.loop = true;  //ë°°ê²½ìŒì•… ë£¨í”„
+        bgmPlayer.volume = bgmVolume; //ë³¼ë¥¨
         bgmPlayer.clip = bgmClip;
 
 
-        //È¿°úÀ½ ÇÃ·¹ÀÌ¾î ÃÊ±âÈ­
+        //íš¨ê³¼ìŒ í”Œë ˆì´ì–´ ì´ˆê¸°í™”
         GameObject sfxobject = new GameObject("sfxPlayer");
         sfxobject.transform.parent = transform;
-        sfxPlayers = new AudioSource[channels]; //Ã¤³Î °ªÀ» ÅëÇØ ¿Àµğ¿À ¼Ò½º ¹è¿­ ÃÊ±âÈ­, ½ÇÁ¦ ³»¿ë¹° ÃÊ±âÈ­ X
+        sfxPlayers = new AudioSource[channels]; //ì±„ë„ ê°’ì„ í†µí•´ ì˜¤ë””ì˜¤ ì†ŒìŠ¤ ë°°ì—´ ì´ˆê¸°í™”, ì‹¤ì œ ë‚´ìš©ë¬¼ ì´ˆê¸°í™” X
 
-        for (int index = 0; index < sfxPlayers.Length; index++) //¸ğµç È¿°úÀ½ ¿Àµğ¿À ¼Ò½º »ı¼ºÇÏ¸é¼­ ÀúÀå
+        for (int index = 0; index < sfxPlayers.Length; index++) //ëª¨ë“  íš¨ê³¼ìŒ ì˜¤ë””ì˜¤ ì†ŒìŠ¤ ìƒì„±í•˜ë©´ì„œ ì €ì¥
         {
             sfxPlayers[index] = sfxobject.AddComponent<AudioSource>();
             sfxPlayers[index].playOnAwake = false;
@@ -56,7 +56,7 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void PlayBgm(bool isplay) //¹è°æÀ½ Àç»ı ÇÔ¼ö
+    public void PlayBgm(bool isplay) //ë°°ê²½ìŒ ì¬ìƒ í•¨ìˆ˜
     {
         if (isplay)
         {
@@ -70,7 +70,7 @@ public class AudioManager : MonoBehaviour
 
 
 
-    public void PlaySfx(Sfx sfx) //È¿°úÀ½ Àç»ı ÇÔ¼ö
+    public void PlaySfx(Sfx sfx) //íš¨ê³¼ìŒ ì¬ìƒ í•¨ìˆ˜
     {
         for (int index = 0; index < sfxPlayers.Length; index++)
         {
