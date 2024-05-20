@@ -13,4 +13,5 @@ public class FlightAnimationController : TopDownAnimationController
     {
         anim.SetBool(isMoving, direction.magnitude != 0);
     }
+    
 }

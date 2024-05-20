@@ -26,7 +26,7 @@ public class TopDownShooting : MonoBehaviour
 
     private void SpawnBullet(FlightStat flightStat, float angle)
     {
-        Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyConponent<Bullet>();
+        Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyComponent<Bullet>();
         if (bullet != null)
         {
             bullet.transform.position = weaponPivot.position; 
