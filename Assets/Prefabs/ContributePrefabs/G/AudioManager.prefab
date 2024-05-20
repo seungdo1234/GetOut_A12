@@ -44,10 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab6497568ce458a4b883d70a173a0a35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgmClip: {fileID: 8300000, guid: 033766cc31c97904bae4404b8a079544, type: 3}
+  bgmClip:
+  - {fileID: 8300000, guid: 033766cc31c97904bae4404b8a079544, type: 3}
+  - {fileID: 8300000, guid: bef0cef2ded0f0645ad90c6e5bdd4965, type: 3}
+  - {fileID: 8300000, guid: 35967e8a4dfb1664e9b066939272c0a4, type: 3}
   bgmVolume: 0.2
-  probgmClip: {fileID: 8300000, guid: bef0cef2ded0f0645ad90c6e5bdd4965, type: 3}
-  probgmVolume: 0.2
   sfxClips:
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   - {fileID: 8300000, guid: 380a61624a607f042ab5e96218f37633, type: 3}

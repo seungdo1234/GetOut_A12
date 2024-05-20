@@ -9,15 +9,10 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance; //정적 메모리에 담기 위한 instance 변수 선언
 
-    [Header("#StartBGM")]  //시작 음악
-    public AudioClip bgmClip; //배경음과 관련된 클립
+    [Header("#BGM")]  //시작 음악
+    public AudioClip[] bgmClip; //배경음과 관련된 클립
     public float bgmVolume;  //배경음과 관련된 볼륨     
     AudioSource bgmPlayer;  //배경음과 관련된 오디오 소스
-
-    [Header("#ProBGM")]  //게임 진행시 음악
-    public AudioClip probgmClip; //배경음과 관련된 클립
-    public float probgmVolume;  //배경음과 관련된 볼륨     
-    AudioSource probgmPlayer;  //배경음과 관련된 오디오 소스
 
     [Header("#SFX")] //효과음
     public AudioClip[] sfxClips; //효과음과 관련된 클립
@@ -27,6 +22,7 @@ public class AudioManager : MonoBehaviour
     int channelIndex;
 
     public enum Sfx { EnemyHit, PlayerAtk, PlayerHit, ItemCon, ItemEqu } //적군 타격, 플레이어 공격, 플레이어 타격, 소비 아이템 장착, 무기 아이템 장착
+    public enum Bgm { StartBgm, MainBgm, BossBgm } //시작 브금, 메인 브금, 보스 등장 브금
 
 
     private void Awake()
@@ -44,7 +40,6 @@ public class AudioManager : MonoBehaviour
         bgmPlayer.playOnAwake = false;  //캐릭터 누를때 배경음악 활성화
         bgmPlayer.loop = true;  //배경음악 루프
         bgmPlayer.volume = bgmVolume; //볼륨
-        bgmPlayer.clip = bgmClip;
 
 
         //효과음 플레이어 초기화
@@ -73,7 +68,23 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void Bgmplay(Bgm bgm) //상활별 Bgm 변경
+    {
+        for (int index = 0; index < sfxPlayers.Length; index++)
+        {
+            int loopIndex = (index + channelIndex) % sfxPlayers.Length;
 
+            if (sfxPlayers[loopIndex].isPlaying)
+                continue;
+
+            channelIndex = loopIndex;
+            sfxPlayers[loopIndex].clip = sfxClips[(int)bgm];
+            sfxPlayers[loopIndex].Play();
+            break;
+
+        }
+
+    }
 
     public void PlaySfx(Sfx sfx) //효과음 재생 함수
     {
