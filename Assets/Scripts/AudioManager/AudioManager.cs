@@ -9,10 +9,15 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance; //정적 메모리에 담기 위한 instance 변수 선언
 
-    [Header("#BGM")]  //배경 음악
+    [Header("#StartBGM")]  //시작 음악
     public AudioClip bgmClip; //배경음과 관련된 클립
     public float bgmVolume;  //배경음과 관련된 볼륨     
     AudioSource bgmPlayer;  //배경음과 관련된 오디오 소스
+
+    [Header("#ProBGM")]  //게임 진행시 음악
+    public AudioClip probgmClip; //배경음과 관련된 클립
+    public float probgmVolume;  //배경음과 관련된 볼륨     
+    AudioSource probgmPlayer;  //배경음과 관련된 오디오 소스
 
     [Header("#SFX")] //효과음
     public AudioClip[] sfxClips; //효과음과 관련된 클립
@@ -21,7 +26,7 @@ public class AudioManager : MonoBehaviour
     AudioSource[] sfxPlayers;  //효과음과 관련된 클립
     int channelIndex;
 
-    public enum Sfx { EnemyHit, PlayerAtk, PlayerHit, ItemEqt, ItemRec } //적군 타격, 플레이어 공격, 플레이어 타격
+    public enum Sfx { EnemyHit, PlayerAtk, PlayerHit, ItemCon, ItemEqu } //적군 타격, 플레이어 공격, 플레이어 타격, 소비 아이템 장착, 무기 아이템 장착
 
 
     private void Awake()

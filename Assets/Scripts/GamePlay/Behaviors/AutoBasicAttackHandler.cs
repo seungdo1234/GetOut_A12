@@ -34,6 +34,7 @@ public class AutoBasicAttackHandler : TopDownShooting
         {
             if (flightStat.CurrentStat.EFlightStatus != EFlightStatus.Alive) break;
             Shooting(flightStat.CurrentStat, "Bullet");
+
             yield return wait;
         }
     }
