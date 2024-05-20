@@ -34,7 +34,11 @@ public class TopDownShooting : MonoBehaviour
         }
         else
         {
+<<<<<<< Updated upstream
             bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletOverrideAnimator, targetLayer);
+=======
+            Debug.Log("Bullet Null Error");
+>>>>>>> Stashed changes
         }
     }
 }

@@ -854,7 +854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pools:
-  - tag: Bullet
+  - type: 1
     prefab: {fileID: 1450614913314674808, guid: 43072050348739c4fa0bbcb12f68cbd2, type: 3}
     size: 16
     parentTransform: {fileID: 3752394092259737820}
