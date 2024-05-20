@@ -35,7 +35,7 @@ public class TopDownShooting : MonoBehaviour
         }
         else
         {
-            Debug.Log("");
+            Debug.Log("Bullet Null Error");
         }
     }
 }
