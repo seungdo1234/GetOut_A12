@@ -10,6 +10,13 @@ public class PlayerInputController : TopDownController
     {
         Vector2 dir = inputValue.Get<Vector2>().normalized;
         CallMoveEvent(dir);
-        
+    }
+
+    private void OnSpecialFire(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+            CallSpecialFireEvent();
+        }
     }
 }
