@@ -5,13 +5,7 @@ public class TopDownShooting : MonoBehaviour
 {
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
-
-    private EPoolObjectType poolObjectType;
-    protected virtual void Awake()
-    {
-        poolObjectType = EPoolObjectType.Bullet;
-    }
-
+     
     protected void Shooting(FlightStat flightStat)
     {
         // 몇 도 만큼 각도를 띄울건지
@@ -26,15 +20,22 @@ public class TopDownShooting : MonoBehaviour
         for (int i = 0; i < numberOfProjectilePerShot; i++)
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            CreateBullet(flightStat, angle);
+            SpawnBullet(flightStat, angle);
         }
     }
 
-    private void CreateBullet(FlightStat flightStat, float angle)
+    private void SpawnBullet(FlightStat flightStat, float angle)
     {
-        PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(poolObjectType.ToString());
-        bullet.transform.position = weaponPivot.position;
-        bullet.transform.Rotate(0, 0, angle);
-        bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);
+        Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyConponent<Bullet>();
+        if (bullet != null)
+        {
+            bullet.transform.position = weaponPivot.position; 
+            bullet.transform.Rotate(0, 0, angle);
+            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);   
+        }
+        else
+        {
+            Debug.Log("");
+        }
     }
 }

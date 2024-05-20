@@ -6,9 +6,8 @@ public class AutoBasicAttackHandler : TopDownShooting
     private Coroutine scoutAttackCoroutine;
     private FlightStatHandler flightStat;
 
-    protected override void Awake()
+    protected void Awake()
     {
-        base.Awake();
         flightStat = GetComponent<FlightStatHandler>();
     }
 
