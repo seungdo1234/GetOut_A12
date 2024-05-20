@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+      
     }
 
 
@@ -28,8 +29,10 @@ public class NewBehaviourScript : MonoBehaviour
     // Start버튼 구현 중
     public void OnCllickNewGame()
     {
-        //버튼으로 두어야 하는지 확인 필요하므로, 4주차 프로젝트 해설 참고하여 구현하기.
-        Debug.Log("새 게임");
+        //버튼 작동, "MainScene"으로 전환. File - Build Settings에서 이동 할 씬들을 등록해야 작동 함.
+        SceneManager.LoadScene("MainScene");
+        
+
     }
 
 
