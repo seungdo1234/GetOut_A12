@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-    private CharacterStatHandler statHandler;
+    private FlightStatHandler statHandler;
 
     public event Action OnDamage;
     public event Action OnHeal;
@@ -14,7 +14,7 @@ public class HealthSystem : MonoBehaviour
     public float MaxHealth => statHandler.CurrentStat.MaxHealth;
     private void Awake()
     {
-        statHandler = GetComponent<CharacterStatHandler>();
+        statHandler = GetComponent<FlightStatHandler>();
     }
 
     private void Start()

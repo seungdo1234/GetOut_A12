@@ -1,14 +1,16 @@
-﻿using System;
+using System;
 using UnityEngine;
 
 public class TopDownMovement : MonoBehaviour
 {
     private TopDownController controller;
+    private FlightStatHandler flightStatHandler;
     private Rigidbody2D rigid;
     
     private Vector2 movementDir = Vector2.zero;
     private void Awake()
     {
+        flightStatHandler = GetComponent<FlightStatHandler>();
         controller = GetComponent<TopDownController>();
         rigid = GetComponent<Rigidbody2D>();
     }
@@ -26,7 +28,7 @@ public class TopDownMovement : MonoBehaviour
     private void ApplyMovement(Vector2 dir) // 실제로 이동을 하는 함수
     {
         // 스탯 적용
-        dir *= CharacterDataManager.Instance.PlayerData.MoveSpeed;
+        dir *= flightStatHandler.CurrentStat.MoveSpeed;
 
         rigid.velocity = dir;
     }

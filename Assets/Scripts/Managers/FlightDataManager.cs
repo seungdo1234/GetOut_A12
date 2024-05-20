@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class CharacterDataManager : MonoBehaviour
+public class FlightDataManager : MonoBehaviour
 {
-    public static CharacterDataManager Instance;
+    public static FlightDataManager Instance;
 
-    [SerializeField] private PlayerData playerData;
-    public PlayerData PlayerData => playerData;
+    //[SerializeField] private PlayerData playerData;
+    //public PlayerData PlayerData => playerData;
     private void Awake()
     {
         if (Instance == null)

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class CharacterData : MonoBehaviour, IDamageable
+public class FlightData : MonoBehaviour
 {
-    [Header("# Character Stat")]
+    [Header("# Fligth Stat")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float atkDelay;
     [SerializeField] private float atkDamage;
@@ -21,19 +21,4 @@ public class CharacterData : MonoBehaviour, IDamageable
     public float BulletAngle => bulletAngle;
     public float BulletSpeed => bulletSpeed;
     public EFlightStatus EFlightStatus => Eflightstatus;
-    
-    // 따로 빼야한다.
-    public void TakeDamage(float damage)
-    {
-        if (curHealth - damage >= 0)
-        {
-            curHealth -= damage;   
-        }
-        else
-        {
-            // 게임오버
-            Eflightstatus = EFlightStatus.Dead;
-            // 여기서 CallDeathEvent를 호출해야한다.
-        }
-    }
 }

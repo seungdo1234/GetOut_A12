@@ -2,30 +2,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 변동되는 스텟에 대한 관리
-public class CharacterStatHandler : MonoBehaviour
+public class FlightStatHandler : MonoBehaviour
 {
-    [SerializeField] private CharacterStat baseStat;
-    public CharacterStat CurrentStat { get; private set; }
-    public List<CharacterStat> statModifiers = new List<CharacterStat>();
+    [SerializeField] private FlightStat baseStat;
+    public FlightStat CurrentStat { get; private set; }
+    public List<FlightStat> statModifiers = new List<FlightStat>();
 
     private void Awake()
     {
-        InitCharacterStat();        
+        InitFlightStat();        
     }
     private void OnEnable()
     {
-        InitCharacterStat();
+        InitFlightStat();
     }
-    private void InitCharacterStat()
+    private void InitFlightStat()
     {
-        CurrentStat = new CharacterStat();
+        CurrentStat = new FlightStat();
         CurrentStat.MoveSpeed = baseStat.MoveSpeed;
         CurrentStat.AtkDelay = baseStat.AtkDelay;
+        CurrentStat.AtkDamage = baseStat.AtkDamage;
         CurrentStat.MaxHealth = baseStat.MaxHealth;
         CurrentStat.BulletNum = baseStat.BulletNum;
         CurrentStat.BulletAngle = baseStat.BulletAngle;
         CurrentStat.BulletSpeed = baseStat.BulletSpeed;
         CurrentStat.EFlightStatus= baseStat.EFlightStatus;
+        CurrentStat.BulletAnimator = baseStat.BulletAnimator;
     }
 
     public void Death()

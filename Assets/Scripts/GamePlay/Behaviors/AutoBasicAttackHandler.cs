@@ -1,43 +1,39 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AutoBasicAttackHandler : TopDownShooting
 {
-    private Coroutine attackCoroutine;
+    private Coroutine scoutAttackCoroutine;
+    private FlightStatHandler flightStat;
 
+    protected void Awake()
+    {
+        flightStat = GetComponent<FlightStatHandler>();
+    }
 
     private void Start()
     {
-        PlayAutoBasicAttack();
+        PlayAutoScoutAttack();
     }
 
-    public void PlayAutoBasicAttack()
+    public void PlayAutoScoutAttack()
     {
         // 현재 비행기가 살아있는 경우에만 총기 발사
-        if (attackCoroutine != null)
+        if (scoutAttackCoroutine != null)
         {
-            StopCoroutine(attackCoroutine);
+            StopCoroutine(scoutAttackCoroutine);
         }
-        attackCoroutine = StartCoroutine(AutoBasicAttackCoroutine());
+
+        scoutAttackCoroutine = StartCoroutine(AutoScoutAttackCoroutine());
     }
-    private IEnumerator AutoBasicAttackCoroutine()
+    private IEnumerator AutoScoutAttackCoroutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(CharacterDataManager.Instance.PlayerData.AtkDelay);
-        
-        while (true)
+        WaitForSeconds wait = new WaitForSeconds(flightStat.CurrentStat.AtkDelay);
+
+        while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
-            if (CharacterDataManager.Instance.PlayerData.EFlightStatus != EFlightStatus.Alive) break;
-            
-            Shooting(CharacterDataManager.Instance.PlayerData, "Bullet");
+            Shooting(flightStat.CurrentStat);
             yield return wait;
         }
-        Debug.Log("Out");
-    }
-
-    private void ShootBullet()
-    {
-
     }
 }

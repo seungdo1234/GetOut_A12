@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CharacterAnimationController : TopDownAnimationController
+public class FlightAnimationController : TopDownAnimationController
 {
     private readonly int isMoving = Animator.StringToHash("isMoving");
 

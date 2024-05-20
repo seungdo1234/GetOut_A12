@@ -1,8 +1,7 @@
-
-public enum EEnemyType 
+public enum EEnemyType
 {
     Default,
-    Scout,//잡몹1
+    Scout, //잡몹1
 }
 
 // Flight가 살아있는지 죽어있는지의 상태를 나타낼 enum
@@ -13,7 +12,17 @@ public enum EFlightStatus
     Dead,
 }
 
+public enum EPoolObjectType
+{
+    Default,
+    Bullet,
+    Enemy
+}
 
-
-public enum EWeaponType{Defalut,AutoCannon, Rockets, Zapper}
-
+public enum EWeaponType
+{
+    Defalut,
+    AutoCannon,
+    Rockets,
+    Zapper
+}
