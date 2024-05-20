@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - BackGround
+  - Camera
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Camera
   - Water
   - UI
   - Player

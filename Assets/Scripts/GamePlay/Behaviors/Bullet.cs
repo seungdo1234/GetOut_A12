@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 
@@ -9,26 +10,43 @@ public class Bullet : PoolObject
     private Rigidbody2D rigid;
     [SerializeField]private LayerMask targetLayer;
     private float damage;
+    private Quaternion origRotation;
+    private Animator anim;
+    
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        origRotation = transform.rotation;
     }
 
-    public override void BulletInit( float damage,float bulletSpeed ,LayerMask targetLayer)
+    // Enemy (위에서 아래로)
+    public override void BulletInit(float damage, float bulletSpeed, AnimatorOverrideController animator, LayerMask targetLayer)
+    {
+        rigid.velocity = -transform.up * bulletSpeed;
+        anim.runtimeAnimatorController = animator;
+        this.targetLayer = targetLayer;
+        this.damage = damage;
+    }
+
+
+    // Player (아래에서 위로)
+    public override void BulletInit(float damage, float bulletSpeed, AnimatorController animator, LayerMask targetLayer)
     {
         rigid.velocity = transform.up * bulletSpeed;
+        anim.runtimeAnimatorController = animator;
         this.targetLayer = targetLayer;
         this.damage = damage;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (IsLayerMatched(other.gameObject.layer ,targetLayer.value))
+        if (IsLayerMatched(targetLayer.value, other.gameObject.layer ))
         {
-            IDamageable damageable = other.GetComponent<IDamageable>();
-            if (damageable != null)
+            HealthSystem healthSystem = other.GetComponent<HealthSystem>();
+            if (healthSystem != null)
             {
-                damageable.TakeDamage(damage);
+                healthSystem.ChangeHealth(-damage);
             }
             DisableBullet();
         }
@@ -36,7 +54,7 @@ public class Bullet : PoolObject
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("BackGround"))
+        if (other.CompareTag("Camera"))
         {
             DisableBullet();
         }
@@ -44,7 +62,7 @@ public class Bullet : PoolObject
 
     private void DisableBullet()
     {
-        transform.rotation = Quaternion.Euler(0,0,0);
+        transform.rotation = origRotation;
         gameObject.SetActive(false);
     }
     

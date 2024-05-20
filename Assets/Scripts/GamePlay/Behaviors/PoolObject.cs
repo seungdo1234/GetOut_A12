@@ -1,7 +1,10 @@
+using UnityEditor.Animations;
 using UnityEngine;
 
-public abstract class PoolObject : MonoBehaviour
+public class PoolObject : MonoBehaviour
 {
-    public abstract void BulletInit(float damage ,float bulletSpeed , LayerMask targetLayer);
+    public virtual void BulletInit(float damage, float bulletSpeed, AnimatorOverrideController animator, LayerMask targetLayer) { }
+    public virtual void BulletInit(float damage, float bulletSpeed, AnimatorController animator, LayerMask targetLayer) { }
     
+
 }

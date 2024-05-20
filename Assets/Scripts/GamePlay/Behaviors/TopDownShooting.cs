@@ -1,34 +1,40 @@
-﻿using UnityEngine;
-using Quaternion = System.Numerics.Quaternion;
+using UnityEngine;
 
 public class TopDownShooting : MonoBehaviour
 {
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
     
-    protected void Shooting(CharacterData characterData)
+    protected void Shooting(FlightStat flightStat, string tag)
     {
         // 몇 도 만큼 각도를 띄울건지
-        float projectilesAngleSpace = characterData.BulletAngle;
+        float projectilesAngleSpace = flightStat.BulletAngle;
         // 한 번에 몇발 나갈 건지
-        int numberOfProjectilePerShot = characterData.BulletNum;
-        
+        int numberOfProjectilePerShot = flightStat.BulletNum;
+
         // 최소 각 구하기
         float minAngle = -(numberOfProjectilePerShot / 2f) * projectilesAngleSpace +
                          0.5f * projectilesAngleSpace;
-        
-        for (int i = 0; i < numberOfProjectilePerShot; i++) 
+
+        for (int i = 0; i < numberOfProjectilePerShot; i++)
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            CreateBullet(characterData,angle);
+            CreateBullet(flightStat, angle, tag);
         }
     }
 
-    private void CreateBullet(CharacterData characterData,float angle)
+    private void CreateBullet(FlightStat flightStat, float angle, string tag)
     {
-        PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool("Bullet");
+        PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(tag);
         bullet.transform.position = weaponPivot.position;
-        bullet.transform.Rotate(0,0,angle);
-        bullet.BulletInit(characterData.AtkDamage,characterData.BulletSpeed, targetLayer);
+        bullet.transform.Rotate(0, 0, angle);
+        if(flightStat.BulletAnimator != null)
+        {
+            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);
+        }
+        else
+        {
+            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletOverrideAnimator, targetLayer);
+        }
     }
 }
