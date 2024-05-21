@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ZapperEventHandler : SpecialWeaponController
@@ -57,5 +58,11 @@ public class ZapperEventHandler : SpecialWeaponController
             }
             yield return null;
         }
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        StopCoroutine(FireLaserCoroutine());
     }
 }

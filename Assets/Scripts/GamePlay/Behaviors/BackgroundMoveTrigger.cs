@@ -7,7 +7,7 @@ public class BackgroundMoveTrigger : MonoBehaviour
 
     private void Awake()
     {
-        movementVec = new Vector3(transform.position.x, 20.2f, 0f);
+        movementVec = new Vector3(transform.position.x, 23.8f, 0f);
     }
 
     private void OnTriggerExit2D(Collider2D other)
