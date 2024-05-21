@@ -13,7 +13,7 @@ public class Zapper : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         if (IsLayerMatched(targetLayer.value, other.gameObject.layer))
-        { 
+        {
             other.gameObject.GetComponent<HealthSystem>().ChangeHealth(-Time.deltaTime * damage );
         }
     }
