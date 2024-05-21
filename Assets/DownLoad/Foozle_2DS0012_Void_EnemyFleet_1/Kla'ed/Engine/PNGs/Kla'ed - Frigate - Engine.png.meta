@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 10
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4148499cc81714f99c8d73dcba4f92
+      internalID: -1898235363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 10
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53923aefda6d3264aad3f6fb0a3a6c73
+      internalID: 954662958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_2
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2429189b9016f9a4abfb0be8d5a1ade6
+      internalID: 48919668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6602ef12c4e2c84eae6cce4d2880c44
+      internalID: -796713659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_5
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 10
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31db87d3c3a31f488d15c036ab2db59
+      internalID: -1062904535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_6
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 10
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f032403e2949d642b51bc84215df9c7
+      internalID: -2112590322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_7
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 10
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60814eeb82147a3419d82c5648a2bb0d
+      internalID: -735464009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_8
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be145ab596a09244b6e4c273315dc94
+      internalID: 1919181319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_10
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fec69afd390529468e3964ba298e9d9
+      internalID: 2001098499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_11
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 10
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7de55b577b659045a0fbf819a333494
+      internalID: -1321385797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_3
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 10
+        width: 2
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c36d116933a1dc45a79406c27286917
+      internalID: 280098091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Frigate - Engine_9
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 10
+        width: 2
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6433faf8c2673549849467c5d7c9f56
+      internalID: -257713797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kla'ed - Frigate - Engine_0: -1898235363
+      Kla'ed - Frigate - Engine_1: 954662958
+      Kla'ed - Frigate - Engine_10: 2001098499
+      Kla'ed - Frigate - Engine_11: -1321385797
+      Kla'ed - Frigate - Engine_2: 48919668
+      Kla'ed - Frigate - Engine_3: 280098091
+      Kla'ed - Frigate - Engine_4: -796713659
+      Kla'ed - Frigate - Engine_5: -1062904535
+      Kla'ed - Frigate - Engine_6: -2112590322
+      Kla'ed - Frigate - Engine_7: -735464009
+      Kla'ed - Frigate - Engine_8: 1919181319
+      Kla'ed - Frigate - Engine_9: -257713797
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

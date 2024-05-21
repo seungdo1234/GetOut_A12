@@ -6,6 +6,6 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TorpedoShip
+  m_Name: Torpedo
   m_Controller: {fileID: 9100000, guid: 1d67ae06f23935c48b926b363a2cf44f, type: 2}
   m_Clips: []
