@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 36
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,9 +119,232 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 10
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b21cd522e7004448f10e2b393c3520
+      internalID: 241888383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 9
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf5a2c69563ad947bab202b1b9ac6ef
+      internalID: -1369955517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 8
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f35289cc707a040a18184bff1f03ef
+      internalID: -620327044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 8
+        width: 25
+        height: 10
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eed7e0f306bfbc49acbf4025c43d8ed
+      internalID: -33529412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 9
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c95d5867c5888549be3cd7cb6b4d06d
+      internalID: -1819694532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 10
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdff82ea708a874092f0674450ab64b
+      internalID: -1432914955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 9
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd33994610f2924ab0ddc0dda628813
+      internalID: -1212051401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 8
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573258a350988db428d987c661fb93ad
+      internalID: -1263190984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_8
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 8
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82a69a9bf70d2a479e93065624d44e6
+      internalID: -1045856468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Bomber - Engine_9
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 9
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4f060532dd3fe409a867401fdc9b17
+      internalID: -1962270579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +355,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kla'ed - Bomber - Engine_0: 241888383
+      Kla'ed - Bomber - Engine_1: -1369955517
+      Kla'ed - Bomber - Engine_11: -1189285816
+      Kla'ed - Bomber - Engine_13: -1100861112
+      Kla'ed - Bomber - Engine_15: 424823289
+      Kla'ed - Bomber - Engine_17: -312558187
+      Kla'ed - Bomber - Engine_19: -1366427257
+      Kla'ed - Bomber - Engine_2: -620327044
+      Kla'ed - Bomber - Engine_3: -33529412
+      Kla'ed - Bomber - Engine_4: -1819694532
+      Kla'ed - Bomber - Engine_5: -1432914955
+      Kla'ed - Bomber - Engine_6: -1212051401
+      Kla'ed - Bomber - Engine_7: -1263190984
+      Kla'ed - Bomber - Engine_8: -1045856468
+      Kla'ed - Bomber - Engine_9: -1962270579
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

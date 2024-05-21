@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 36
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,9 +119,232 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 15
+        width: 58
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af09936e6bc7c2c4cb103399bc078c2e
+      internalID: -540710365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 14
+        width: 56
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe4422805b2c5b42921ef68273813d8
+      internalID: -1839438386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 13
+        width: 56
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673c16900e060294c99366919028a95e
+      internalID: 804441179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 13
+        width: 56
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5169750af50e27a42969cd0206412c2b
+      internalID: 185814260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 14
+        width: 56
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5a7e07e2a8e2a4c9908caec5e9dfb6
+      internalID: 540251426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 15
+        width: 58
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84aefab329982ca48a1202fe10f527bb
+      internalID: 1091527827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 14
+        width: 56
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44a6a87b72bf3243b62627ec1ac5629
+      internalID: -1861001036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_14
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 13
+        width: 56
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ad45db6a3216c4faa883f1d410a773
+      internalID: 1535608139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_16
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 13
+        width: 56
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca10e4796c16b2c4ca9d8cbfa719c828
+      internalID: 297074300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Torpedo Ship - Engine_18
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 14
+        width: 56
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449197132b0b15549b4333e62b3b454c
+      internalID: 295040889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +355,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kla'ed - Torpedo Ship - Engine_0: -540710365
+      Kla'ed - Torpedo Ship - Engine_1: 2004803275
+      Kla'ed - Torpedo Ship - Engine_10: 1091527827
+      Kla'ed - Torpedo Ship - Engine_11: -246208439
+      Kla'ed - Torpedo Ship - Engine_12: -1861001036
+      Kla'ed - Torpedo Ship - Engine_13: 183898636
+      Kla'ed - Torpedo Ship - Engine_14: 1535608139
+      Kla'ed - Torpedo Ship - Engine_15: 1882188659
+      Kla'ed - Torpedo Ship - Engine_16: 297074300
+      Kla'ed - Torpedo Ship - Engine_17: -358134283
+      Kla'ed - Torpedo Ship - Engine_18: 295040889
+      Kla'ed - Torpedo Ship - Engine_19: -2018199596
+      Kla'ed - Torpedo Ship - Engine_2: -1839438386
+      Kla'ed - Torpedo Ship - Engine_3: -458995690
+      Kla'ed - Torpedo Ship - Engine_4: 804441179
+      Kla'ed - Torpedo Ship - Engine_5: 98878923
+      Kla'ed - Torpedo Ship - Engine_6: 185814260
+      Kla'ed - Torpedo Ship - Engine_7: 1358666892
+      Kla'ed - Torpedo Ship - Engine_8: 540251426
+      Kla'ed - Torpedo Ship - Engine_9: -318669309
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
