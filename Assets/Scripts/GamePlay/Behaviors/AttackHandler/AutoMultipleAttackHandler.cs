@@ -3,17 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AutoTorpedoAttackHandler : TopDownShooting
+public class AutoMultipleAttackHandler : TopDownShooting
 {
     [SerializeField] private List<Transform> firePositions;
     private Coroutine attackCoroutine;
 
     private void Start()
     {
-        PlayAutoTorpedoAttack();
+        PlayAutoMultipleAttack();
     }
 
-    private void PlayAutoTorpedoAttack()
+    private void PlayAutoMultipleAttack()
     {
         // 이미 코루틴이 실행중이라면 중지하고 다시 시작 (겹치는 것 방지)
         if(attackCoroutine != null)
@@ -21,10 +21,10 @@ public class AutoTorpedoAttackHandler : TopDownShooting
             StopCoroutine(attackCoroutine);
         }
 
-        attackCoroutine = StartCoroutine(AutoTorpedoAttackCoroutine());
+        attackCoroutine = StartCoroutine(AutoMultipleAttackCoroutine());
     }
 
-    private IEnumerator AutoTorpedoAttackCoroutine()
+    private IEnumerator AutoMultipleAttackCoroutine()
     {
         WaitForSeconds wait = new WaitForSeconds(flightStat.CurrentStat.AtkDelay);
         while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)

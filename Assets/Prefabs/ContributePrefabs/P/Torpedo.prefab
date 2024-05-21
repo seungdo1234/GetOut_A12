@@ -110,7 +110,6 @@ GameObject:
   - component: {fileID: 588701428704586149}
   - component: {fileID: 3212648194990522030}
   - component: {fileID: 4696038284056910577}
-  - component: {fileID: 5492478873843442568}
   - component: {fileID: 4860960887119987837}
   m_Layer: 7
   m_Name: Torpedo
@@ -302,22 +301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b02d9cf40ac71e644b46f0ffc2aaa619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5492478873843442568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4414682695601055721}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3771a69bb2511b5489864299c6be4ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponPivot: {fileID: 3206464574733082151}
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!114 &4860960887119987837
 MonoBehaviour:
   m_ObjectHideFlags: 0
