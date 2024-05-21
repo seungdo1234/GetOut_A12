@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 3739450772927168473}
   - component: {fileID: 3799362411352182954}
   - component: {fileID: 3419451275344230929}
+  - component: {fileID: 5230026611543109046}
   - component: {fileID: 371265551231294211}
+  - component: {fileID: -5095049286684579562}
   m_Layer: 0
   m_Name: Item_AutoCannon
   m_TagString: Untagged
@@ -107,6 +109,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!50 &5230026611543109046
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4887844590161238190}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &371265551231294211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -152,3 +181,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.46752813, y: 0.4494245}
   m_EdgeRadius: 0
+--- !u!114 &-5095049286684579562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4887844590161238190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65a3fbfca384cdd81f46ce6332c1465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropSpeed: 2

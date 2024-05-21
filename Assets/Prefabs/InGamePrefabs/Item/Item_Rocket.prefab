@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 2125784727046640521}
   - component: {fileID: 8248992694496350026}
   - component: {fileID: 1283363863257016713}
+  - component: {fileID: 8393888116039045235}
   - component: {fileID: 8296369041951673217}
+  - component: {fileID: 1678148331035931225}
   m_Layer: 0
   m_Name: Item_Rocket
   m_TagString: Untagged
@@ -107,6 +109,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!50 &8393888116039045235
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879998580344293124}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &8296369041951673217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -152,3 +181,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.56408036, y: 0.5882181}
   m_EdgeRadius: 0
+--- !u!114 &1678148331035931225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879998580344293124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65a3fbfca384cdd81f46ce6332c1465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropSpeed: 2

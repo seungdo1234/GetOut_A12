@@ -21,26 +21,17 @@ public class Item : MonoBehaviour
         itemType = type;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        
+        
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             switch (itemType)
             {
-                case EWeaponType.AutoCannon:
-                    Debug.Log("a획득");
-                    //TODO::해당 아이템 효과
-                    break;
-                case EWeaponType.Rockets:
-                    Debug.Log("r획득");
-                    //TODO::해당 아이템 효과
-                    break;
-                case EWeaponType.Zapper:
-                    Debug.Log("z획득");
-                    //TODO::해당 아이템 효과
-                    break;
+                
             }
+            Destroy(this.gameObject);
         }
-        Destroy(this.gameObject);
     }
 }
