@@ -48,6 +48,12 @@ public class TopDownShooting : MonoBehaviour
         }
     }
 
+    protected void Shooting(FlightStat flightStat, float angle)
+    {
+        // 정해진 각도로 바로 발사
+        SpawnBullet(flightStat, angle);
+    }
+
     private void SpawnBullet(FlightStat flightStat, float angle)
     {
         Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyConponent<Bullet>();

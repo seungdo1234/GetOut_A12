@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3072850785773277733}
   - component: {fileID: 5760182303301484349}
   - component: {fileID: 3477717769146524469}
-  - component: {fileID: 7966078372650043305}
+  - component: {fileID: 2646878368277729923}
   m_Layer: 7
   m_Name: Frigate
   m_TagString: Untagged
@@ -174,9 +174,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 1
+    AtkDelay: 0.1
     AtkDamage: 0
-    MaxHealth: 2
+    MaxHealth: 100
     BulletNum: 1
     BulletAngle: 0
     BulletSpeed: -1
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b02d9cf40ac71e644b46f0ffc2aaa619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7966078372650043305
+--- !u!114 &2646878368277729923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,13 +217,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1117741728767590280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3771a69bb2511b5489864299c6be4ec2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b3471c5d70b6cf4a9fb49e339e77dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPivot: {fileID: 8617207334424497537}
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
+  anglePerFire: 30
 --- !u!1 &3802211351139278590
 GameObject:
   m_ObjectHideFlags: 0
