@@ -181,7 +181,7 @@ MonoBehaviour:
     BulletAngle: 0
     BulletSpeed: -1
     EFlightStatus: 0
-    BulletAnimator: {fileID: 22100000, guid: 03c8b8b038f93584f992d850e9a41b25, type: 2}
+    BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
   statModifiers: []
 --- !u!114 &5760182303301484349
 MonoBehaviour:
@@ -445,7 +445,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1898235363, guid: fae4bc829cfcd43489579c0768286120, type: 3}
+  m_Sprite: {fileID: 928359260, guid: fae4bc829cfcd43489579c0768286120, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
