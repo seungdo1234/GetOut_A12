@@ -6,10 +6,11 @@ public class TopDownShooting : MonoBehaviour
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
     protected FlightStatHandler flightStat;
-
+    protected Rigidbody2D rigid;
     protected void Awake()
     {
         flightStat = GetComponent<FlightStatHandler>();
+        rigid = GetComponent<Rigidbody2D>();
     }
 
     protected void Shooting(FlightStat flightStat)
