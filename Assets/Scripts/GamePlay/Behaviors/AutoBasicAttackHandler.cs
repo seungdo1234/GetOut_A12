@@ -27,7 +27,10 @@ public class AutoBasicAttackHandler : TopDownShooting
 
         while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
-            Shooting(flightStat.CurrentStat);
+            if (!isBasicAttackLock)
+            {
+                Shooting(flightStat.CurrentStat);   
+            }
             yield return wait;
         }
     }

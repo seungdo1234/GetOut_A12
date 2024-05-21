@@ -16,7 +16,7 @@ public class Item : MonoBehaviour
         rd.velocity = Vector2.down * dropSpeed;
     }
 
-    public void ItmeInit(EWeaponType type)
+    public void ItemInit(EWeaponType type)
     {
         itemType = type;
     }

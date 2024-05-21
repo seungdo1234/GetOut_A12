@@ -20,22 +20,22 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    //매개 변수로 몬스터 위치 불러와야되나?
-    public void DropInfo(GameObject monster)
+    // 매개 변수로 몬스터 위치 불러와야되나?
+    public void DropInfo(Vector3 position)
     {
         int Randomint = Random.Range(0, itemRandomInt);
 
         if(Randomint < 0)
         {
-            itemInstantiate(AutoCannon, monster, EWeaponType.AutoCannon);
+            itemInstantiate(AutoCannon, position, EWeaponType.AutoCannon);
         }
         else if (Randomint < 3)
         {
-            itemInstantiate(Rockets, monster, EWeaponType.Rockets);
+            itemInstantiate(Rockets, position, EWeaponType.Rockets);
         }
         else if (Randomint < 6)
         {
-            itemInstantiate(Zapper, monster, EWeaponType.Zapper);
+            itemInstantiate(Zapper, position, EWeaponType.Zapper);
         }
         else
         {
@@ -43,9 +43,9 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    private void itemInstantiate(GameObject items , GameObject monster, EWeaponType eWeaponType)
+    private void itemInstantiate(GameObject items , Vector3 position, EWeaponType eWeaponType)
     {
-        Item item = Instantiate(items, monster.transform.position, items.transform.rotation).GetComponent<Item>(); // 반복문 으로????
-        item.ItmeInit(eWeaponType);
+        Item item = Instantiate(items, position, items.transform.rotation).GetComponent<Item>(); // 반복문 으로????
+        item.ItemInit(eWeaponType);
     }
 }
