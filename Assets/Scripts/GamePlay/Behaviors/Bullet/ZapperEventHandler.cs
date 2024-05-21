@@ -34,14 +34,14 @@ public class ZapperEventHandler : SpecialWeaponController
     {
         zapperProjectile.Init(specialWeaponData.atkPercent * FlightDataManager.Instance.PlayerFlightStat.CurrentStat.AtkDamage);
         zapperProjectile.gameObject.SetActive(true);
-      //  autoBasicAttackHandler.BasicAttackLock(true);
+        autoBasicAttackHandler.BasicAttackLock(true);
         StartCoroutine(FireLaserCoroutine());
     }
 
     private void DisableZapper()
     {
         zapperProjectile.gameObject.SetActive(false);
-     //   autoBasicAttackHandler.BasicAttackLock(false);
+        autoBasicAttackHandler.BasicAttackLock(false);
     }
 
     private IEnumerator FireLaserCoroutine()

@@ -5,6 +5,7 @@ public class AutoBasicAttackHandler : TopDownShooting
 {
     private Coroutine attackCoroutine;
 
+    private bool isBasicAttackLock;
     private void Start()
     {
         PlayAutoBasicAttack();
@@ -29,5 +30,10 @@ public class AutoBasicAttackHandler : TopDownShooting
             Shooting(flightStat.CurrentStat);
             yield return wait;
         }
+    }
+
+    public void BasicAttackLock(bool isTrue)
+    {
+        isBasicAttackLock = isTrue;
     }
 }
