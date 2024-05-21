@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public float bgmVolume;  //배경음과 관련된 볼륨     
     AudioSource bgmPlayer;  //배경음과 관련된 오디오 소스
 
+
     [Header("#SFX")] //효과음
     public AudioClip[] sfxClips; //효과음과 관련된 클립
     public float sfxVolume;  //효과음과 관련된 클립
@@ -56,34 +57,21 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void PlayBgm(bool isplay) //배경음 재생 함수
+    public void PlayBgm( Bgm bgm, bool isplay) //배경음 재생 함수
     {
-        if (isplay)
+        if (isplay) //상황에 따른 배경음 교체
         {
+            //재생중인 오디오 스탑
+            bgmPlayer.Stop();
+            //오디오 클립 교체
+            bgmPlayer.clip = bgmClip[(int)bgm];
+            //다시 오디오 재생
             bgmPlayer.Play();
         }
         else
         {
             bgmPlayer.Stop();
         }
-    }
-
-    public void Bgmplay(Bgm bgm) //상활별 Bgm 변경
-    {
-        for (int index = 0; index < sfxPlayers.Length; index++)
-        {
-            int loopIndex = (index + channelIndex) % sfxPlayers.Length;
-
-            if (sfxPlayers[loopIndex].isPlaying)
-                continue;
-
-            channelIndex = loopIndex;
-            sfxPlayers[loopIndex].clip = sfxClips[(int)bgm];
-            sfxPlayers[loopIndex].Play();
-            break;
-
-        }
-
     }
 
     public void PlaySfx(Sfx sfx) //효과음 재생 함수
