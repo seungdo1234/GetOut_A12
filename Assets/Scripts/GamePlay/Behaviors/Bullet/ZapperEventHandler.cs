@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ZapperEventHandler : SpecialWeaponController
@@ -26,7 +27,7 @@ public class ZapperEventHandler : SpecialWeaponController
         if (anim.GetBool(isSpecialFire) || !isDelay)
         {
             anim.SetBool(isSpecialFire, isPress);
-            StartCoroutine(WaitSpecialWeaponDelayTime());
+             StartCoroutine(WaitSpecialWeaponDelayTime());
         }
     }
 
@@ -57,5 +58,11 @@ public class ZapperEventHandler : SpecialWeaponController
             }
             yield return null;
         }
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        StopCoroutine(FireLaserCoroutine());
     }
 }
