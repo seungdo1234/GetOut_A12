@@ -174,11 +174,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 1.5
+    AtkDelay: 1
     AtkDamage: 0
     MaxHealth: 2
-    BulletNum: 3
-    BulletAngle: 30
+    BulletNum: 1
+    BulletAngle: 0
     BulletSpeed: -1
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 03c8b8b038f93584f992d850e9a41b25, type: 2}
@@ -365,7 +365,7 @@ Transform:
   m_GameObject: {fileID: 5812681021297722578}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

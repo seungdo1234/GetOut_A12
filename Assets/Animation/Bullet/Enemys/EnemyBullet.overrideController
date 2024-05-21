@@ -6,8 +6,8 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ScoutBullet
+  m_Name: EnemyBullet
   m_Controller: {fileID: 9100000, guid: a1f64fc3360f66b478b2ca82b7e7b3ba, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: 63f3f646befc11044a71e740211a1b61, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 2c9ab4db70738eb42b21da7c5c9a12a5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fcea387b1b7140c49891d1f00cff16ea, type: 2}
