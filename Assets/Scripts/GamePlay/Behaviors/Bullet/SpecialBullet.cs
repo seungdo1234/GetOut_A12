@@ -26,12 +26,11 @@ public class SpecialBullet : PoolObject
     {
         if (IsLayerMatched (targetLayer.value,other.gameObject.layer))
         {
-            // ExplosionEffect explosionEffect = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Effect)
-            //     .ReturnMyComponent<ExplosionEffect>();
-            //
-            // explosionEffect.transform.position = transform.position;
-            // explosionEffect.Init(damage);
-            // gameObject.SetActive(false);
+            ExplosionEffect explosionEffect = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Effect).ReturnMyConponent<ExplosionEffect>();
+            
+            explosionEffect.transform.position = transform.position;
+            explosionEffect.Init(damage);
+            gameObject.SetActive(false);
         }
     }
     
