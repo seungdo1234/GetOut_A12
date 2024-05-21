@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DisableOnDeath : MonoBehaviour
 {
-    public void OnDisableScout()
+    public void OnDisableFlight()
     {
         gameObject.SetActive(false);
     }
