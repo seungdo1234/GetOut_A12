@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class AutoBasicAttackHandler : TopDownShooting
 {
-    private Coroutine scoutAttackCoroutine;
+    private Coroutine attackCoroutine;
     private FlightStatHandler flightStat;
 
     protected void Awake()
@@ -13,20 +13,20 @@ public class AutoBasicAttackHandler : TopDownShooting
 
     private void Start()
     {
-        PlayAutoScoutAttack();
+        PlayAutoBasicAttack();
     }
 
-    public void PlayAutoScoutAttack()
+    public void PlayAutoBasicAttack()
     {
         // 현재 비행기가 살아있는 경우에만 총기 발사
-        if (scoutAttackCoroutine != null)
+        if (attackCoroutine != null)
         {
-            StopCoroutine(scoutAttackCoroutine);
+            StopCoroutine(attackCoroutine);
         }
 
-        scoutAttackCoroutine = StartCoroutine(AutoScoutAttackCoroutine());
+        attackCoroutine = StartCoroutine(AutoBasicAttackCoroutine());
     }
-    private IEnumerator AutoScoutAttackCoroutine()
+    private IEnumerator AutoBasicAttackCoroutine()
     {
         WaitForSeconds wait = new WaitForSeconds(flightStat.CurrentStat.AtkDelay);
 

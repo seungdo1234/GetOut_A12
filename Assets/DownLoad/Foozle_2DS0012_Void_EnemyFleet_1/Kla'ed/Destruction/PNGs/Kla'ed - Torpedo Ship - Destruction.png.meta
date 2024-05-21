@@ -134,7 +134,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Torpedo_destruction_5
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 15
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decbdae18f5790040939ae9ff96d5329
+      internalID: 1245699286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torpedo_destruction_6
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 6
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4f4ddb38643cb42b7a18be2adb6577
+      internalID: -1972963866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torpedo_destruction_7
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 7
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf3297fe81ad3342a76fa3147d6862c
+      internalID: -1508303924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torpedo_destruction_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 21
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e943f269f197ac14bbac4274edccf8bc
+      internalID: -2003283016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torpedo_destruction_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 21
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668a5c76c0c425d4eacb989190467987
+      internalID: 1975067917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torpedo_destruction_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 21
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee653b7831c44a040b9de8bac2781db1
+      internalID: 930364689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torpedo_destruction_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 21
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619803d15ea63094990ca82a85e915ce
+      internalID: -707520202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torpedo_destruction_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 22
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b6d19293976a843a650942269c1f63
+      internalID: -700231393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torpedo_destruction_8
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 11
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5101cb9960f986f41ac01a2731e9b6c3
+      internalID: 2061630737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +334,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kla'ed - Torpedo Ship - Destruction_10: -215143111
+      Kla'ed - Torpedo Ship - Destruction_11: 382750912
+      Kla'ed - Torpedo Ship - Destruction_12: -1427667659
+      Kla'ed - Torpedo Ship - Destruction_13: -1588868882
+      Kla'ed - Torpedo Ship - Destruction_14: 1030066698
+      Kla'ed - Torpedo Ship - Destruction_15: 786265589
+      Kla'ed - Torpedo Ship - Destruction_16: 1115743294
+      Kla'ed - Torpedo Ship - Destruction_17: 841340884
+      Kla'ed - Torpedo Ship - Destruction_8: 1203979518
+      Kla'ed - Torpedo Ship - Destruction_9: -175062884
+      Torpedo_destruction_0: -2003283016
+      Torpedo_destruction_1: 1975067917
+      Torpedo_destruction_2: 930364689
+      Torpedo_destruction_3: -707520202
+      Torpedo_destruction_4: -700231393
+      Torpedo_destruction_5: 1245699286
+      Torpedo_destruction_6: -1972963866
+      Torpedo_destruction_7: -1508303924
+      Torpedo_destruction_8: 2061630737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
