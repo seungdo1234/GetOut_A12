@@ -6,6 +6,7 @@ public class AutoBasicAttackHandler : TopDownShooting
     private Coroutine scoutAttackCoroutine;
     private FlightStatHandler flightStat;
 
+    private bool isBasicAttackLock;
     protected void Awake()
     {
         flightStat = GetComponent<FlightStatHandler>();
@@ -32,8 +33,16 @@ public class AutoBasicAttackHandler : TopDownShooting
 
         while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
-            Shooting(flightStat.CurrentStat);
+            if (!isBasicAttackLock)
+            {
+                Shooting(flightStat.CurrentStat);
+            }
             yield return wait;
         }
+    }
+
+    public void BasicAttackLock(bool isTrue) // 기본 공격 Lock
+    {
+        isBasicAttackLock = isTrue;
     }
 }

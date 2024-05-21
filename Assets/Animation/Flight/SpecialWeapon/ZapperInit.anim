@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AutoCannon
+  m_Name: ZapperInit
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,19 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2044976216, guid: c63d029f91bab7946ac4b73183703971, type: 3}
+      value: {fileID: 138974320, guid: 9a93654a3c2843a4ea31e413e08ed23b, type: 3}
     - time: 0.083333336
-      value: {fileID: -796052821, guid: c63d029f91bab7946ac4b73183703971, type: 3}
+      value: {fileID: -1265756128, guid: 9a93654a3c2843a4ea31e413e08ed23b, type: 3}
     - time: 0.16666667
-      value: {fileID: 1853414599, guid: c63d029f91bab7946ac4b73183703971, type: 3}
+      value: {fileID: -55628269, guid: 9a93654a3c2843a4ea31e413e08ed23b, type: 3}
     - time: 0.25
-      value: {fileID: 665654402, guid: c63d029f91bab7946ac4b73183703971, type: 3}
-    - time: 0.33333334
-      value: {fileID: 1429412248, guid: c63d029f91bab7946ac4b73183703971, type: 3}
-    - time: 0.41666666
-      value: {fileID: 1361442404, guid: c63d029f91bab7946ac4b73183703971, type: 3}
-    - time: 0.5
-      value: {fileID: -459554881, guid: c63d029f91bab7946ac4b73183703971, type: 3}
+      value: {fileID: -108127458, guid: 9a93654a3c2843a4ea31e413e08ed23b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -56,19 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2044976216, guid: c63d029f91bab7946ac4b73183703971, type: 3}
-    - {fileID: -796052821, guid: c63d029f91bab7946ac4b73183703971, type: 3}
-    - {fileID: 1853414599, guid: c63d029f91bab7946ac4b73183703971, type: 3}
-    - {fileID: 665654402, guid: c63d029f91bab7946ac4b73183703971, type: 3}
-    - {fileID: 1429412248, guid: c63d029f91bab7946ac4b73183703971, type: 3}
-    - {fileID: 1361442404, guid: c63d029f91bab7946ac4b73183703971, type: 3}
-    - {fileID: -459554881, guid: c63d029f91bab7946ac4b73183703971, type: 3}
+    - {fileID: 138974320, guid: 9a93654a3c2843a4ea31e413e08ed23b, type: 3}
+    - {fileID: -1265756128, guid: 9a93654a3c2843a4ea31e413e08ed23b, type: 3}
+    - {fileID: -55628269, guid: 9a93654a3c2843a4ea31e413e08ed23b, type: 3}
+    - {fileID: -108127458, guid: 9a93654a3c2843a4ea31e413e08ed23b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5833333
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -88,15 +79,8 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.083333336
-    functionName: FireSpecialBullet
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.16666667
-    functionName: FireSpecialBullet
+  - time: 0.33333334
+    functionName: FireZapper
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

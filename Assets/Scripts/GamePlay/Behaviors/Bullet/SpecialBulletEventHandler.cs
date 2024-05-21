@@ -12,9 +12,9 @@ public class SpecialBulletEventHandler : SpecialWeaponController
         topDownController.OnSpecialFireEvent += SpecialBulletFireEvent;
     }
 
-    private void SpecialBulletFireEvent()
+    private void SpecialBulletFireEvent(bool isPress)
     {
-        if (!isDelay)
+        if (isPress && !isDelay)
         {
             StartCoroutine(WaitSpecialWeaponDelayTime());
             anim.SetTrigger(isSpecialFire);
@@ -33,6 +33,7 @@ public class SpecialBulletEventHandler : SpecialWeaponController
         if (--CurBulletCount == 0)
         {
             topDownController.OnSpecialFireEvent -= SpecialBulletFireEvent;
+            StopCoroutine(WaitSpecialWeaponDelayTime());
             gameObject.SetActive(false);
         }
     }
