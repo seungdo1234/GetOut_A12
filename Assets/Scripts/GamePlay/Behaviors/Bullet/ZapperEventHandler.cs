@@ -27,7 +27,7 @@ public class ZapperEventHandler : SpecialWeaponController
         if (anim.GetBool(isSpecialFire) || !isDelay)
         {
             anim.SetBool(isSpecialFire, isPress);
-             StartCoroutine(WaitSpecialWeaponDelayTime());
+            StartCoroutine(WaitSpecialWeaponDelayTime());
         }
     }
 
