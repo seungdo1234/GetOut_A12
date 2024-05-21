@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 96
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,9 +119,211 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Scourge_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 21
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92322bca41faf0a4181b9c2555f1867c
+      internalID: 1368967753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scourge_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 21
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60dd8af16dc1ef489a4fcf77807eea1
+      internalID: -135511215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scourge_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 20
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8d66baf40178a458a9e54c625e7572
+      internalID: 1713200446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scourge_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 17
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4030f1fcbbb9308489d30c5a5479b277
+      internalID: -594383782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scourge_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 15
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb0e26c44161ee4bbac495d38514073
+      internalID: -542177560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scourge_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 11
+        width: 49
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72460e19934819b4db8b5b28d0d3470d
+      internalID: 1159589174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scourge_6
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 9
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbabb123237ae214c97426b5d3186806
+      internalID: 33923660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scourge_8
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 13
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea366cf521c665a4aa093fda369b7c70
+      internalID: -1345534555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scourge_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 12
+        width: 44
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1409cfeab9b28dc41b85d2a3b996962a
+      internalID: 428006200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +334,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nautolan Ship - Bomber_10: -1414283548
+      Nautolan Ship - Bomber_11: 39181878
+      Nautolan Ship - Bomber_12: -1535160951
+      Nautolan Ship - Bomber_14: -1239435403
+      Nautolan Ship - Bomber_15: -1210880028
+      Nautolan Ship - Bomber_16: 863175325
+      Nautolan Ship - Bomber_17: 681410938
+      Nautolan Ship - Bomber_18: -1206837512
+      Nautolan Ship - Bomber_19: -474648454
+      Nautolan Ship - Bomber_21: -1380898248
+      Nautolan Ship - Bomber_6: 624302349
+      Nautolan Ship - Bomber_8: -848622575
+      Nautolan Ship - Bomber_9: 1499389426
+      Scourge_0: 1368967753
+      Scourge_1: -135511215
+      Scourge_2: 1713200446
+      Scourge_3: -594383782
+      Scourge_4: -542177560
+      Scourge_5: 1159589174
+      Scourge_6: 33923660
+      Scourge_7: 428006200
+      Scourge_8: -1345534555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
