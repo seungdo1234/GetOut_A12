@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3487162162854293921}
   - component: {fileID: 6252091671392018529}
   m_Layer: 0
-  m_Name: AutoCannonProjectile
+  m_Name: SpecialBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

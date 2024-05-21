@@ -17,7 +17,8 @@ public enum EPoolObjectType
     Default,
     Bullet,
     Enemy,
-    AutoCannon
+    Effect,
+    SpecialBullet
     
 }
 

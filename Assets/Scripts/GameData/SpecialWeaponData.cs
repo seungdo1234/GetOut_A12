@@ -8,6 +8,8 @@ public class SpecialWeaponData
     public float atkPercent;
     public Transform[] weaponPivots;
     public int bulletCount;
+    public int bulletsPerShot;
     public float weaponAtkDelay;
     public float weaponSpeed;
+    public RuntimeAnimatorController bulletAnimator;
 }
