@@ -34,5 +34,8 @@ public class SpecialWeaponController : MonoBehaviour
       isDelay = false;
    }
 
-   
+   protected virtual void OnDisable()
+   {
+      StopCoroutine(WaitSpecialWeaponDelayTime());
+   }
 }

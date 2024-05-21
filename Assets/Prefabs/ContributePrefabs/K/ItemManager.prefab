@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d2d537fa734f05829a85a48d84eced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemRandomInt: 20
-  AutoCannon: {fileID: 9169770536016537705, guid: 2eef7ee0214158349b0fef7e0aa61a07, type: 3}
-  Rockets: {fileID: 6889548588812679982, guid: bb5f300869bef2042ab2c0cae6119008, type: 3}
-  Zapper: {fileID: 3632038364285121926, guid: 40c58ca542b22904fabc5c78fcf9c613, type: 3}
+  itemRandomInt: 7
+  AutoCannon: {fileID: 4887844590161238190, guid: da752f348e7ba594ebc9df5dff3d26e0, type: 3}
+  Rockets: {fileID: 7879998580344293124, guid: cf69d706e1b1e4a44bc0329820878db6, type: 3}
+  Zapper: {fileID: 2456885684126951616, guid: 61c2c14ebbc829740b70d4d0152a4a3b, type: 3}

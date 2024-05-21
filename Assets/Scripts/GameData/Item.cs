@@ -27,10 +27,7 @@ public class Item : MonoBehaviour
         
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            switch (itemType)
-            {
-                
-            }
+            ItemManager.Instance.SpecialWeaponHandler.EquipSpecialWeapon(itemType);
             Destroy(this.gameObject);
         }
     }
