@@ -134,7 +134,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Frigate_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 14
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ae607f8d0767847817317d0b9248db
+      internalID: -123928284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frigate_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 14
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a348541e99146054fbf8c0f133a09e10
+      internalID: 1399404579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frigate_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 14
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61ca28d11ab6d846b9c86b1a3c90d79
+      internalID: 708520502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frigate_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 14
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dcc44d3c22974b419936cac65a4e0d6
+      internalID: -1364018093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frigate_5
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 4
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69bdf2876c34d4947ba7e3302a904a66
+      internalID: 1108510369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frigate_6
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5df8007de8bef49b97fe7d2abba097
+      internalID: -192956629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frigate_7
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0784585feaca245b4a2de3641f11e4
+      internalID: -1975542196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frigate_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 19
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9262a8b1caada28479d6e53faef80fac
+      internalID: -1777622368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frigate_8
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991024af74f66864d8ab7c1b007328c6
+      internalID: -38045909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +334,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Frigate_0: -123928284
+      Frigate_1: 1399404579
+      Frigate_2: 708520502
+      Frigate_3: -1364018093
+      Frigate_4: -1777622368
+      Frigate_5: 1108510369
+      Frigate_6: -192956629
+      Frigate_7: -1975542196
+      Frigate_8: -38045909
+      Kla'ed - Frigate - Destruction_10: -1697613205
+      Kla'ed - Frigate - Destruction_11: -798661674
+      Kla'ed - Frigate - Destruction_13: -53848152
+      Kla'ed - Frigate - Destruction_14: 1628021498
+      Kla'ed - Frigate - Destruction_15: -1451428964
+      Kla'ed - Frigate - Destruction_16: -1345944329
+      Kla'ed - Frigate - Destruction_17: 113527182
+      Kla'ed - Frigate - Destruction_18: -1511239299
+      Kla'ed - Frigate - Destruction_8: 46638532
+      Kla'ed - Frigate - Destruction_9: -1177508339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
