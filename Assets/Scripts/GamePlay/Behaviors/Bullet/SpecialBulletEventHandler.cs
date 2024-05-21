@@ -23,12 +23,12 @@ public class SpecialBulletEventHandler : SpecialWeaponController
 
     private void FireSpecialBullet() // 애니메이션 이벤트
     {
-        float damage = specialWeaponData.atkPercent * FlightDataManager.Instance.PlayerFlightStat.CurrentStat.AtkDamage;
-        SpecialBullet special = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.SpecialBullet)
-            .ReturnMyComponent<SpecialBullet>();
-
-        special.transform.position = specialWeaponData.weaponPivots[CurBulletCount % specialWeaponData.bulletsPerShot].position;
-        special.SpecialBulletInit(damage, specialWeaponData.weaponSpeed , specialWeaponData.bulletAnimator);
+        // float damage = specialWeaponData.atkPercent * FlightDataManager.Instance.PlayerFlightStat.CurrentStat.AtkDamage;
+        // SpecialBullet special = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.SpecialBullet)
+        //     .ReturnMyComponent<SpecialBullet>();
+        //
+        // special.transform.position = specialWeaponData.weaponPivots[CurBulletCount % specialWeaponData.bulletsPerShot].position;
+        // special.SpecialBulletInit(damage, specialWeaponData.weaponSpeed , specialWeaponData.bulletAnimator);
 
         if (--CurBulletCount == 0)
         {
