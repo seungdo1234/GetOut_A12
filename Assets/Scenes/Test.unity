@@ -352,15 +352,15 @@ PrefabInstance:
     - target: {fileID: 6621631430053619517, guid: 35eec0a6fa1e67747a31d9c4c978239d, type: 3}
       propertyPath: Zapper
       value: 
-      objectReference: {fileID: 3632038364285121926, guid: 40c58ca542b22904fabc5c78fcf9c613, type: 3}
+      objectReference: {fileID: 2456885684126951616, guid: 61c2c14ebbc829740b70d4d0152a4a3b, type: 3}
     - target: {fileID: 6621631430053619517, guid: 35eec0a6fa1e67747a31d9c4c978239d, type: 3}
       propertyPath: Rockets
       value: 
-      objectReference: {fileID: 6889548588812679982, guid: bb5f300869bef2042ab2c0cae6119008, type: 3}
+      objectReference: {fileID: 7879998580344293124, guid: cf69d706e1b1e4a44bc0329820878db6, type: 3}
     - target: {fileID: 6621631430053619517, guid: 35eec0a6fa1e67747a31d9c4c978239d, type: 3}
       propertyPath: AutoCannon
       value: 
-      objectReference: {fileID: 9169770536016537705, guid: 2eef7ee0214158349b0fef7e0aa61a07, type: 3}
+      objectReference: {fileID: 4887844590161238190, guid: da752f348e7ba594ebc9df5dff3d26e0, type: 3}
     - target: {fileID: 6621631430053619517, guid: 35eec0a6fa1e67747a31d9c4c978239d, type: 3}
       propertyPath: itemRandomInt
       value: 20
