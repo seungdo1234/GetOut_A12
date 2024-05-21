@@ -174,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 1.5
+    AtkDelay: 1
     AtkDamage: 0
     MaxHealth: 2
     BulletNum: 3

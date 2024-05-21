@@ -396,12 +396,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 0.5
+    AtkDelay: 1
     AtkDamage: 0
     MaxHealth: 2
     BulletNum: 1
     BulletAngle: 0
-    BulletSpeed: -5
+    BulletSpeed: -1
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 03c8b8b038f93584f992d850e9a41b25, type: 2}
   statModifiers: []
