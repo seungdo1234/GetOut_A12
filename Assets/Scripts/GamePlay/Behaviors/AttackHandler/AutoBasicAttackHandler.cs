@@ -4,12 +4,6 @@ using UnityEngine;
 public class AutoBasicAttackHandler : TopDownShooting
 {
     private Coroutine attackCoroutine;
-    private FlightStatHandler flightStat;
-
-    protected void Awake()
-    {
-        flightStat = GetComponent<FlightStatHandler>();
-    }
 
     private void Start()
     {
@@ -18,7 +12,7 @@ public class AutoBasicAttackHandler : TopDownShooting
 
     public void PlayAutoBasicAttack()
     {
-        // 현재 비행기가 살아있는 경우에만 총기 발사
+        // 이미 코루틴이 실행중이라면 중지하고 다시 시작 (겹치는 것 방지)
         if (attackCoroutine != null)
         {
             StopCoroutine(attackCoroutine);

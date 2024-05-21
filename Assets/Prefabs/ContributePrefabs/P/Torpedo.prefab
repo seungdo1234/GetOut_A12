@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3280049242007285164}
   m_Layer: 7
-  m_Name: FirePoint5
+  m_Name: FirePoint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,37 +57,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.58, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2032579587992758547}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2391950959263096510
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8515119522807876385}
-  m_Layer: 7
-  m_Name: FirePoint3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8515119522807876385
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2391950959263096510}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -142,6 +111,7 @@ GameObject:
   - component: {fileID: 3212648194990522030}
   - component: {fileID: 4696038284056910577}
   - component: {fileID: 5492478873843442568}
+  - component: {fileID: 4860960887119987837}
   m_Layer: 7
   m_Name: Torpedo
   m_TagString: Untagged
@@ -298,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 1.5
+    AtkDelay: 0.4
     AtkDamage: 0
     MaxHealth: 2
     BulletNum: 1
@@ -339,7 +309,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4414682695601055721}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3771a69bb2511b5489864299c6be4ec2, type: 3}
   m_Name: 
@@ -348,6 +318,27 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &4860960887119987837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4414682695601055721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaafe94ade34e544abfea2ed16a069b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPivot: {fileID: 0}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  firePositions:
+  - {fileID: 3206464574733082151}
+  - {fileID: 8482907481616258316}
+  - {fileID: 7038643982978710142}
+  - {fileID: 3280049242007285164}
 --- !u!1 &4903992003428085234
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,42 +454,9 @@ Transform:
   m_Children:
   - {fileID: 3206464574733082151}
   - {fileID: 8482907481616258316}
-  - {fileID: 2627755452117474782}
-  - {fileID: 8515119522807876385}
   - {fileID: 7038643982978710142}
   - {fileID: 3280049242007285164}
   m_Father: {fileID: 9166319248983020369}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6455373564757063590
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2627755452117474782}
-  m_Layer: 7
-  m_Name: FirePoint2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2627755452117474782
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6455373564757063590}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2032579587992758547}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7367682989954517811
 GameObject:
@@ -510,7 +468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7038643982978710142}
   m_Layer: 7
-  m_Name: FirePoint4
+  m_Name: FirePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
