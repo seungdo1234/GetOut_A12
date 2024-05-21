@@ -16,7 +16,10 @@ public enum EPoolObjectType
 {
     Default,
     Bullet,
-    Enemy
+    Enemy,
+    Effect,
+    SpecialBullet
+    
 }
 
 public enum EWeaponType
@@ -24,5 +27,6 @@ public enum EWeaponType
     Defalut,
     AutoCannon,
     Rockets,
-    Zapper
+    Zapper,
+    BigSpaceGun
 }

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 36
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,190 +119,9 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Kla'ed - Fighter - Destruction_0
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 21
-        width: 24
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d35a7fc507d0ffd4f8b0fdc575c08d3f
-      internalID: 1515382341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kla'ed - Fighter - Destruction_1
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 21
-        width: 24
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c236beae571ca2a41955c25505fdb14d
-      internalID: 1345893124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kla'ed - Fighter - Destruction_2
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 21
-        width: 24
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f3548f82a191da4da0de5e409719bce
-      internalID: 262613443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kla'ed - Fighter - Destruction_3
-      rect:
-        serializedVersion: 2
-        x: 211
-        y: 19
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e47f62f8b5769a46a3d1e3723216d0e
-      internalID: 913042164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kla'ed - Fighter - Destruction_46
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 15
-        width: 43
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a831856fa8949064bb7d298a0943bef4
-      internalID: 1548200231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kla'ed - Fighter - Destruction_5
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 6
-        width: 62
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0753db898d6d52f4f8009c9465d1c1a9
-      internalID: 1095578829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kla'ed - Fighter - Destruction_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 6
-        width: 65
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24f1c663cd2315946b6eda6d5e7740c6
-      internalID: -385079811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kla'ed - Fighter - Destruction_7
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 6
-        width: 51
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cc4604a37bcc5e439619b46951bbb25
-      internalID: -2024686523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -313,21 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Kla'ed - Fighter - Destruction_0: 1515382341
-      Kla'ed - Fighter - Destruction_1: 1345893124
-      Kla'ed - Fighter - Destruction_10: -239718139
-      Kla'ed - Fighter - Destruction_11: 1095578829
-      Kla'ed - Fighter - Destruction_13: -385079811
-      Kla'ed - Fighter - Destruction_15: -2024686523
-      Kla'ed - Fighter - Destruction_2: 262613443
-      Kla'ed - Fighter - Destruction_3: 913042164
-      Kla'ed - Fighter - Destruction_46: 1548200231
-      Kla'ed - Fighter - Destruction_5: 1095578829
-      Kla'ed - Fighter - Destruction_6: -385079811
-      Kla'ed - Fighter - Destruction_7: -2024686523
-      Kla'ed - Fighter - Destruction_8: 684843154
-      Kla'ed - Fighter - Destruction_9: 1659582029
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

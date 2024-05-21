@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Fire",
+                    "name": "SpecialFire",
                     "type": "Button",
                     "id": "5da5cd38-0c61-4573-a761-50430ca51be4",
                     "expectedControlType": "Button",
@@ -87,7 +87,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Fire",
+                    "action": "SpecialFire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
