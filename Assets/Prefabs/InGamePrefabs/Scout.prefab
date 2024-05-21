@@ -194,7 +194,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.06, y: 0.1}
+  m_Size: {x: 0.16666667, y: 0.2777778}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -397,13 +397,12 @@ MonoBehaviour:
     MoveSpeed: 5
     AtkDelay: 0.5
     AtkDamage: 0
-    MaxHealth: 1
+    MaxHealth: 2
     BulletNum: 1
     BulletAngle: 0
-    BulletSpeed: 5
+    BulletSpeed: -5
     EFlightStatus: 0
-    BulletAnimator: {fileID: 0}
-    BulletOverrideAnimator: {fileID: 22100000, guid: 03c8b8b038f93584f992d850e9a41b25, type: 2}
+    BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
   statModifiers: []
 --- !u!114 &263631638447748584
 MonoBehaviour:
