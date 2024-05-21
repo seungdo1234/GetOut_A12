@@ -16,6 +16,7 @@ public enum EPoolObjectType
 {
     Default,
     Bullet,
+    Bomb,
     Enemy,
     Effect,
     SpecialBullet

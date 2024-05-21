@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 917413736002202134}
   - component: {fileID: 5084520024327315864}
   - component: {fileID: 4141357431260920455}
-  - component: {fileID: 7695683321507077333}
+  - component: {fileID: 5956635428459622532}
   m_Layer: 7
   m_Name: Bomber
   m_TagString: Untagged
@@ -289,11 +289,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 0.5
+    AtkDelay: 5
     AtkDamage: 0
-    MaxHealth: 2
-    BulletNum: 1
-    BulletAngle: 0
+    MaxHealth: 100
+    BulletNum: 12
+    BulletAngle: 30
     BulletSpeed: -3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b02d9cf40ac71e644b46f0ffc2aaa619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7695683321507077333
+--- !u!114 &5956635428459622532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -332,13 +332,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4499314281059732493}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3771a69bb2511b5489864299c6be4ec2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a31ba5ceb9d6bf4a97ad52194be89b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPivot: {fileID: 3895788049161272328}
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
+  bombSpeed: -3
+  explodeDelay: 1
 --- !u!1 &6841858195610128976
 GameObject:
   m_ObjectHideFlags: 0

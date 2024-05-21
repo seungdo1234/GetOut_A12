@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 
@@ -21,7 +17,7 @@ public class Bullet : PoolObject
     }
 
     // Enemy (위에서 아래로)
-    public  void BulletInit(float damage, float bulletSpeed, RuntimeAnimatorController animator, LayerMask targetLayer)
+    public void BulletInit(float damage, float bulletSpeed, RuntimeAnimatorController animator, LayerMask targetLayer)
     {
         rigid.velocity = transform.up * bulletSpeed;
         anim.runtimeAnimatorController = animator;
