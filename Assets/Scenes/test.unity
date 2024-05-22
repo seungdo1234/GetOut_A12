@@ -638,35 +638,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4358345558752066686, guid: 35eec0a6fa1e67747a31d9c4c978239d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1182488669}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35eec0a6fa1e67747a31d9c4c978239d, type: 3}
---- !u!1 &1182488668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4358345558752066686, guid: 35eec0a6fa1e67747a31d9c4c978239d, type: 3}
-  m_PrefabInstance: {fileID: 1182488667}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1182488669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182488668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2628441343144ecbd0e2299e8df4d7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  consumableAnimators:
-  - {fileID: 9100000, guid: df1b7893e48bf174b841d207a4b3e95a, type: 2}
-  - {fileID: 22100000, guid: 285a53d8c3bb6984fadc6dc96996fd3d, type: 2}
-  - {fileID: 22100000, guid: 3fed35c0638b03a4b9a6b3f3ebb00306, type: 2}
-  spawnTime: 5
-  spawnPercent: 10
-  downSpeed: 4
 --- !u!4 &1224840752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5857534625816161519, guid: af99894ceb6f7ce4fa0a004f2132aac9, type: 3}

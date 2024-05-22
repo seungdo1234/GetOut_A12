@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4899325609896666085}
   - component: {fileID: 6621631430053619517}
+  - component: {fileID: 7121480711070775069}
   m_Layer: 0
   m_Name: ItemManager
   m_TagString: Untagged
@@ -48,3 +49,22 @@ MonoBehaviour:
   AutoCannon: {fileID: 4887844590161238190, guid: da752f348e7ba594ebc9df5dff3d26e0, type: 3}
   Rockets: {fileID: 7879998580344293124, guid: cf69d706e1b1e4a44bc0329820878db6, type: 3}
   Zapper: {fileID: 2456885684126951616, guid: 61c2c14ebbc829740b70d4d0152a4a3b, type: 3}
+--- !u!114 &7121480711070775069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358345558752066686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2628441343144ecbd0e2299e8df4d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  consumableAnimators:
+  - {fileID: 9100000, guid: df1b7893e48bf174b841d207a4b3e95a, type: 2}
+  - {fileID: 22100000, guid: 285a53d8c3bb6984fadc6dc96996fd3d, type: 2}
+  - {fileID: 22100000, guid: 3fed35c0638b03a4b9a6b3f3ebb00306, type: 2}
+  spawnTime: 5
+  spawnPercent: 10
+  downSpeed: 4
