@@ -7,7 +7,7 @@ public class TopDownShooting : MonoBehaviour
     [SerializeField] private LayerMask targetLayer;
     protected FlightStatHandler flightStat;
     protected Rigidbody2D rigid;
-    protected void Awake()
+    protected virtual void Awake()
     {
         flightStat = GetComponent<FlightStatHandler>();
         rigid = GetComponent<Rigidbody2D>();

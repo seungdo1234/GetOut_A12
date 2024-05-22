@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 9025140002170917796}
   - component: {fileID: 5086444977231051011}
   - component: {fileID: 8447157544848500216}
+  - component: {fileID: 2795054249262259777}
   m_Layer: 7
   m_Name: Scurge
   m_TagString: Untagged
@@ -342,7 +343,7 @@ MonoBehaviour:
     MoveSpeed: 5
     AtkDelay: 0.1
     AtkDamage: 0
-    MaxHealth: 1
+    MaxHealth: 100
     BulletNum: 1
     BulletAngle: 0
     BulletSpeed: -1
@@ -374,3 +375,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b02d9cf40ac71e644b46f0ffc2aaa619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2795054249262259777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8310535268780509331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc00a9f2b8524064785821fd754a7fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPivot: {fileID: 8453823489332855152}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  rotationDelay: 1.5
+  targetPos: {fileID: 0}

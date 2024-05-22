@@ -114,11 +114,11 @@ MonoBehaviour:
     prefab: {fileID: 1450614913314674808, guid: 43072050348739c4fa0bbcb12f68cbd2, type: 3}
     size: 30
     parentTransform: {fileID: 5382625280737824639}
-  - type: 3
+  - type: 4
     prefab: {fileID: 7470003786145804590, guid: 84b8326f0d313e74898c9744c0bfb58f, type: 3}
     size: 2
     parentTransform: {fileID: 7550460763836433063}
-  - type: 4
+  - type: 5
     prefab: {fileID: 6980001027698345913, guid: 4ec1a50a33cf87a4aa005d092ce943f2, type: 3}
     size: 2
     parentTransform: {fileID: 1227833361756620550}
