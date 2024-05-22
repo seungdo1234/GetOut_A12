@@ -34,7 +34,7 @@ public class ConsumableItem : PoolObject
                     other.gameObject.GetComponent<PlayerBasicAttackHandler>().AttackUp();
                     break;
                 case EConsumableItemType.HealthUp:
-                    other.gameObject.GetComponent<HealthSystem>().ChangeHealth(1);
+                    other.gameObject.GetComponent<HealthSystem>().ChangeHealth(2);
                     break;
                 case EConsumableItemType.BulletCountUp:
                     other.gameObject.GetComponent<PlayerBasicAttackHandler>().BulletCountUp();
