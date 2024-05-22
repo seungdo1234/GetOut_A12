@@ -342,7 +342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7883723262911561647}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -351,7 +351,7 @@ Transform:
   - {fileID: 7509063271592959101}
   - {fileID: 7120213981541749047}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!95 &8820078351938828544
 Animator:
   serializedVersion: 5
@@ -473,12 +473,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 0.5
     AtkDamage: 1
     MaxHealth: 100
-    BulletNum: 12
-    BulletAngle: 30
-    BulletSpeed: -3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
   statModifiers: []
@@ -523,8 +519,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
-  bombSpeed: -1
-  explodeDelay: 2
+  bombAttackSO: {fileID: 11400000, guid: fb6f86a5ac8bfbc4fa51b04580c38807, type: 2}
 --- !u!114 &1481488141827448993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,8 +536,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
-  bombSpeed: -1
-  explodeDelay: 2
+  bombAttackSO: {fileID: 11400000, guid: fb6f86a5ac8bfbc4fa51b04580c38807, type: 2}
 --- !u!114 &8091637118265374864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,7 +553,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
-  anglePerFire: 20
+  circularAttackSO: {fileID: 11400000, guid: 7c049fd90c1db9d40adc1336e34e6aad, type: 2}
 --- !u!114 &1954544758207498992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,6 +570,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
+  attackSO: {fileID: 11400000, guid: 943b7f19fc9007d458222644e28f6c05, type: 2}
   firePositions:
   - {fileID: 1835861443697613212}
   - {fileID: 4052472924193655365}
