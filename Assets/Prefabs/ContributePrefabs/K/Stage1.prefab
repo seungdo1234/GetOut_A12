@@ -503,7 +503,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &5819321990745840290
 Animator:
   serializedVersion: 5
@@ -567,6 +567,10 @@ MonoBehaviour:
     MaxHealth: 3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &7296911304123899995
 MonoBehaviour:
@@ -625,7 +629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1532717895183238538
 Transform:
   m_ObjectHideFlags: 0
@@ -1127,7 +1131,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &2462111639408706281
 Animator:
   serializedVersion: 5
@@ -1191,6 +1195,10 @@ MonoBehaviour:
     MaxHealth: 3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &1705344539954231312
 MonoBehaviour:
@@ -1338,7 +1346,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &4131104485376632406
 Animator:
   serializedVersion: 5
@@ -1402,6 +1410,10 @@ MonoBehaviour:
     MaxHealth: 3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &924668437483330735
 MonoBehaviour:
@@ -1581,7 +1593,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &4199332262544894810
 Animator:
   serializedVersion: 5
@@ -1645,6 +1657,10 @@ MonoBehaviour:
     MaxHealth: 3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &1136792625614115235
 MonoBehaviour:

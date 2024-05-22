@@ -635,7 +635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1929263104217302572
 Transform:
   m_ObjectHideFlags: 0
@@ -727,7 +727,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &8893461696757040528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -836,6 +836,10 @@ MonoBehaviour:
     MaxHealth: 7
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &5942524375243834880
 MonoBehaviour:
@@ -1127,7 +1131,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &807830343378251378
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1236,6 +1240,10 @@ MonoBehaviour:
     MaxHealth: 7
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &2460662281532009954
 MonoBehaviour:
@@ -1560,7 +1568,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &1658809395439356153
 Animator:
   serializedVersion: 5
@@ -1624,6 +1632,10 @@ MonoBehaviour:
     MaxHealth: 3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &2487380024520241664
 MonoBehaviour:
@@ -1771,7 +1783,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &1626633552950345352
 Animator:
   serializedVersion: 5
@@ -1835,6 +1847,10 @@ MonoBehaviour:
     MaxHealth: 3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &2527436616596063345
 MonoBehaviour:
@@ -1982,7 +1998,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &3216411338853295910
 Animator:
   serializedVersion: 5
@@ -2046,6 +2062,10 @@ MonoBehaviour:
     MaxHealth: 3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &1811372552911822303
 MonoBehaviour:
@@ -2309,7 +2329,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &2873745381610779137
 Animator:
   serializedVersion: 5
@@ -2373,6 +2393,10 @@ MonoBehaviour:
     MaxHealth: 3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &1324107346590583032
 MonoBehaviour:
@@ -2604,7 +2628,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &2572174864809675403
 Animator:
   serializedVersion: 5
@@ -2668,6 +2692,10 @@ MonoBehaviour:
     MaxHealth: 3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &1599771579250339954
 MonoBehaviour:

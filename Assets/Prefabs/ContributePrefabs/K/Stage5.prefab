@@ -284,13 +284,14 @@ GameObject:
   - component: {fileID: 8032054332820742574}
   - component: {fileID: 6027690719431082738}
   - component: {fileID: 2308494120107477269}
+  - component: {fileID: 2725272179551677845}
   m_Layer: 7
   m_Name: Scurge (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8688123052569545173
 Transform:
   m_ObjectHideFlags: 0
@@ -334,7 +335,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3733926305637233023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -443,6 +444,10 @@ MonoBehaviour:
     MaxHealth: 100
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &8032054332820742574
 MonoBehaviour:
@@ -486,6 +491,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rotationDelay: 1.5
+--- !u!114 &2725272179551677845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588917981502574158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09004881ed4583b4a9833e79ca3dd5eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1632357255676068517
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,13 +640,14 @@ GameObject:
   - component: {fileID: 6948498160540205858}
   - component: {fileID: 5277714053277064643}
   - component: {fileID: 2010539387184276454}
+  - component: {fileID: 1314466944748120023}
   m_Layer: 7
   m_Name: Scurge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6551672000550420680
 Transform:
   m_ObjectHideFlags: 0
@@ -673,7 +691,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5365347094180281159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -782,6 +800,10 @@ MonoBehaviour:
     MaxHealth: 100
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &6948498160540205858
 MonoBehaviour:
@@ -825,6 +847,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rotationDelay: 1.5
+--- !u!114 &1314466944748120023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757287949067238095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09004881ed4583b4a9833e79ca3dd5eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1970158020466891396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,7 +1126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &131544869570454163
 Transform:
   m_ObjectHideFlags: 0
@@ -1273,7 +1307,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &6828019875846747923
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1382,6 +1416,10 @@ MonoBehaviour:
     MaxHealth: 20
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &7607037392840659855
 MonoBehaviour:
@@ -2146,13 +2184,14 @@ GameObject:
   - component: {fileID: 1684984245676743786}
   - component: {fileID: 3770143519933734536}
   - component: {fileID: 7828070059729745804}
+  - component: {fileID: 4704823640640566851}
   m_Layer: 7
   m_Name: Scurge (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1325022947118223322
 Transform:
   m_ObjectHideFlags: 0
@@ -2196,7 +2235,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4449411967791325998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2305,6 +2344,10 @@ MonoBehaviour:
     MaxHealth: 100
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &1684984245676743786
 MonoBehaviour:
@@ -2348,6 +2391,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rotationDelay: 5
+--- !u!114 &4704823640640566851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4094291227828565771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09004881ed4583b4a9833e79ca3dd5eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4136088219736505413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2689,13 +2744,14 @@ GameObject:
   - component: {fileID: 8403653682201104282}
   - component: {fileID: 4252985069009207859}
   - component: {fileID: 1977944831666725491}
+  - component: {fileID: 7733799168996341782}
   m_Layer: 7
   m_Name: Scurge (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1627233201195298048
 Transform:
   m_ObjectHideFlags: 0
@@ -2739,7 +2795,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4238487263206114370
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2848,6 +2904,10 @@ MonoBehaviour:
     MaxHealth: 100
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &8403653682201104282
 MonoBehaviour:
@@ -2891,6 +2951,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rotationDelay: 7
+--- !u!114 &7733799168996341782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5485915594596742145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09004881ed4583b4a9833e79ca3dd5eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5536262875748151302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3075,7 +3147,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &4198173294370681033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3184,6 +3256,10 @@ MonoBehaviour:
     MaxHealth: 20
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &942017086785950805
 MonoBehaviour:
@@ -3277,13 +3353,14 @@ GameObject:
   - component: {fileID: 8955541961625009549}
   - component: {fileID: 606244084418829936}
   - component: {fileID: 6723614864000558377}
+  - component: {fileID: 9097582104482690204}
   m_Layer: 7
   m_Name: Scurge (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &864695702725665697
 Transform:
   m_ObjectHideFlags: 0
@@ -3327,7 +3404,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2871032416718361525
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3436,6 +3513,10 @@ MonoBehaviour:
     MaxHealth: 100
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &8955541961625009549
 MonoBehaviour:
@@ -3479,6 +3560,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rotationDelay: 5
+--- !u!114 &9097582104482690204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5673071484274424620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09004881ed4583b4a9833e79ca3dd5eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5869384367189194152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,7 +3893,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &6536388459240352539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3909,6 +4002,10 @@ MonoBehaviour:
     MaxHealth: 20
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &8344198646740978136
 MonoBehaviour:
@@ -4026,7 +4123,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &6718186600326453851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4135,6 +4232,10 @@ MonoBehaviour:
     MaxHealth: 20
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &8377449330420627608
 MonoBehaviour:
@@ -4285,13 +4386,14 @@ GameObject:
   - component: {fileID: 1296534552078024204}
   - component: {fileID: 6540578513970949187}
   - component: {fileID: 2805293500750572636}
+  - component: {fileID: 5713888480303285165}
   m_Layer: 7
   m_Name: Scurge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3575591909945049865
 Transform:
   m_ObjectHideFlags: 0
@@ -4335,7 +4437,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7508874646083319536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4444,6 +4546,10 @@ MonoBehaviour:
     MaxHealth: 100
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &1296534552078024204
 MonoBehaviour:
@@ -4487,6 +4593,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rotationDelay: 3
+--- !u!114 &5713888480303285165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7407793126983998856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09004881ed4583b4a9833e79ca3dd5eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7555382928494046342
 GameObject:
   m_ObjectHideFlags: 0
@@ -4620,13 +4738,14 @@ GameObject:
   - component: {fileID: 4781823419264353814}
   - component: {fileID: 6557177356242385821}
   - component: {fileID: 5290253465251937202}
+  - component: {fileID: 1670665758216708306}
   m_Layer: 7
   m_Name: Scurge (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1121502387845254117
 Transform:
   m_ObjectHideFlags: 0
@@ -4670,7 +4789,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4762462072488876609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4779,6 +4898,10 @@ MonoBehaviour:
     MaxHealth: 100
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &4781823419264353814
 MonoBehaviour:
@@ -4822,6 +4945,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rotationDelay: 3
+--- !u!114 &1670665758216708306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7826478091719888660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09004881ed4583b4a9833e79ca3dd5eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8022103959063010758
 GameObject:
   m_ObjectHideFlags: 0
@@ -5006,7 +5141,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &176624290069847739
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5115,6 +5250,10 @@ MonoBehaviour:
     MaxHealth: 20
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    bulletNum: 0
+    bulletAngle: 0
+    bulletSpeed: 0
+    atkDelay: 0
   statModifiers: []
 --- !u!114 &3828940434191088167
 MonoBehaviour:
