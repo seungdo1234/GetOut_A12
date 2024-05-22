@@ -72,6 +72,7 @@ public class ZapperEventHandler : SpecialWeaponController
     protected override void OnDisable()
     {
         base.OnDisable();
+        DisableZapper();
         StopFireZapperCoroutine();
     }
 
