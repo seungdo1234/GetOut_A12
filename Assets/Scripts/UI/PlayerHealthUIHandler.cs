@@ -15,7 +15,7 @@ public class PlayerHealthUIHandler : MonoBehaviour
     {
         playerHealthSystem = FlightDataManager.Instance.PlayerFlightStat.GetComponent<HealthSystem>();
 
-        playerHealthSystem.OnDamage += UpdateHeart;
+        playerHealthSystem.OnDamage +=  UpdateHeart;
 
     }
 
