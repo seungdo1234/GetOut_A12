@@ -23,6 +23,11 @@ public class FlightStatHandler : MonoBehaviour
         CurrentStat.AtkDamage = baseStat.AtkDamage;
         CurrentStat.MaxHealth = baseStat.MaxHealth;
         CurrentStat.EFlightStatus= baseStat.EFlightStatus;
+        CurrentStat.bulletAngle = baseStat.bulletAngle;
+        CurrentStat.bulletSpeed = baseStat.bulletSpeed;
+        CurrentStat.bulletNum = baseStat.bulletNum;
+        CurrentStat.atkDelay = baseStat.atkDelay;
+        CurrentStat.BulletAnimator = baseStat.BulletAnimator;
     }
 
     public void Death()
@@ -31,4 +36,3 @@ public class FlightStatHandler : MonoBehaviour
         AudioManager.instance.PlaySfx(Sfx.EnemyHit);
     }
 }
-

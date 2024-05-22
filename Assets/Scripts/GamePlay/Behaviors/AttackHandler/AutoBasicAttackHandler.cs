@@ -5,7 +5,7 @@ public class AutoBasicAttackHandler : TopDownShooting
 {
     [SerializeField] private AttackSO attackSO;
     private Coroutine attackCoroutine;
-    private bool isBasicAttackLock;
+
     private void Start()
     {
         PlayAutoBasicAttack();
@@ -21,23 +21,17 @@ public class AutoBasicAttackHandler : TopDownShooting
 
         attackCoroutine = StartCoroutine(AutoBasicAttackCoroutine());
     }
+
     private IEnumerator AutoBasicAttackCoroutine()
     {
         WaitForSeconds wait = new WaitForSeconds(attackSO.AtkDelay);
 
         while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
-            if (!isBasicAttackLock)
-            {
-                AudioManager.instance.PlaySfx(Sfx.PlayerAtk);
-                Shooting(attackSO);   
-            }
+            AudioManager.instance.PlaySfx(Sfx.PlayerAtk);
+            Shooting(attackSO);
+
             yield return wait;
         }
-    }
-
-    public void BasicAttackLock(bool isTrue)
-    {
-        isBasicAttackLock = isTrue;
     }
 }

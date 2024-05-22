@@ -18,9 +18,9 @@ GameObject:
   - component: {fileID: 4182296330398898533}
   - component: {fileID: 2137473693146402215}
   - component: {fileID: 3088780203460410037}
-  - component: {fileID: 3736022273569927519}
   - component: {fileID: 6933762188987577298}
   - component: {fileID: 4125331985655438850}
+  - component: {fileID: 2075035350470066134}
   m_Layer: 6
   m_Name: Player_Update
   m_TagString: Player
@@ -259,6 +259,10 @@ MonoBehaviour:
     MaxHealth: 6
     EFlightStatus: 0
     BulletAnimator: {fileID: 9100000, guid: a1f64fc3360f66b478b2ca82b7e7b3ba, type: 2}
+    bulletNum: 1
+    bulletAngle: 5
+    bulletSpeed: 7
+    atkDelay: 0.5
   statModifiers: []
 --- !u!114 &3088780203460410037
 MonoBehaviour:
@@ -273,23 +277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
---- !u!114 &3736022273569927519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87775265348895361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3771a69bb2511b5489864299c6be4ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponPivot: {fileID: 6801951947804601480}
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  attackSO: {fileID: 11400000, guid: 8f90e9d19fadd594bbbf13f1db3c5bc1, type: 2}
 --- !u!114 &6933762188987577298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,6 +345,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2075035350470066134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87775265348895361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ced48ec8d434f12a8bceabc18560aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPivot: {fileID: 6801951947804601480}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1093483423414215578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,7 +1077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9124182103890559602
 Transform:
   m_ObjectHideFlags: 0

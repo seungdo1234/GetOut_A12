@@ -6,7 +6,7 @@ public class ZapperEventHandler : SpecialWeaponController
 {
     [SerializeField] private Zapper zapperProjectile;
 
-    private AutoBasicAttackHandler autoBasicAttackHandler;
+    private PlayerBasicAttackHandler autoBasicAttackHandler;
     
     [SerializeField] private float maxFireDuration = 50.0f;
     private float bulletCountPerSecond;
@@ -15,7 +15,7 @@ public class ZapperEventHandler : SpecialWeaponController
     protected override void Awake()
     {
         base.Awake();
-        autoBasicAttackHandler = topDownController.GetComponent<AutoBasicAttackHandler>();
+        autoBasicAttackHandler = topDownController.GetComponent<PlayerBasicAttackHandler>();
     }
 
     protected override void OnEnable()

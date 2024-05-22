@@ -15,7 +15,24 @@ public class TopDownShooting : MonoBehaviour
         flightStat = GetComponent<FlightStatHandler>();
         rigid = GetComponent<Rigidbody2D>();
     }
+    
+    protected void Shooting()
+    {
+        // 몇 도 만큼 각도를 띄울건지
+        float projectilesAngleSpace =  FlightDataManager.Instance.PlayerFlightStat.CurrentStat.bulletAngle;
+        // 한 번에 몇발 나갈 건지
+        int numberOfProjectilePerShot =  FlightDataManager.Instance.PlayerFlightStat.CurrentStat.bulletNum;
 
+        // 최소 각 구하기
+        float minAngle = -(numberOfProjectilePerShot / 2f) * projectilesAngleSpace +
+                         0.5f * projectilesAngleSpace;
+
+        for (int i = 0; i < numberOfProjectilePerShot; i++)
+        {
+            float angle = minAngle + i * projectilesAngleSpace;
+            SpawnBullet(angle);
+        }
+    }
     protected void Shooting(AttackSO attackSO)
     {
         // 몇 도 만큼 각도를 띄울건지
@@ -102,6 +119,21 @@ public class TopDownShooting : MonoBehaviour
             bullet.transform.position = position.position;
             bullet.transform.Rotate(0, 0, angle);
             bullet.BulletInit(attackSO.AtkDamage, attackSO.BulletSpeed, attackSO.BulletAnimator, targetLayer);
+        }
+        else
+        {
+            Debug.Log("Bullet Null Error");
+        }
+    }
+    
+    private void SpawnBullet(float angle)
+    {
+        Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyConponent<Bullet>();
+        if (bullet != null)
+        {
+            bullet.transform.position = weaponPivot.position;
+            bullet.transform.Rotate(0, 0, angle);
+            bullet.BulletInit( FlightDataManager.Instance.PlayerFlightStat.CurrentStat.AtkDamage,  FlightDataManager.Instance.PlayerFlightStat.CurrentStat.bulletSpeed, FlightDataManager.Instance.PlayerFlightStat.CurrentStat.BulletAnimator, targetLayer);
         }
         else
         {
