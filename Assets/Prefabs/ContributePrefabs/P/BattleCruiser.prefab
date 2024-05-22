@@ -473,12 +473,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 0.5
     AtkDamage: 1
     MaxHealth: 100
-    BulletNum: 12
-    BulletAngle: 30
-    BulletSpeed: -3
     EFlightStatus: 0
     BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
   statModifiers: []
@@ -523,8 +519,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
-  bombSpeed: -1
-  explodeDelay: 2
+  bombAttackSO: {fileID: 11400000, guid: 4c0c338b8a1e7a74886289a06ad9bd30, type: 2}
 --- !u!114 &1481488141827448993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,8 +536,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
-  bombSpeed: -1
-  explodeDelay: 2
+  bombAttackSO: {fileID: 11400000, guid: 4c0c338b8a1e7a74886289a06ad9bd30, type: 2}
 --- !u!114 &8091637118265374864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,7 +553,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
-  anglePerFire: 20
+  circularAttackSO: {fileID: 11400000, guid: ae483b975e8e5d74ba6910799a47855b, type: 2}
 --- !u!114 &1954544758207498992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,6 +570,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
+  attackSO: {fileID: 11400000, guid: 4755a35fa775d0a42aee3d6f06bf2e42, type: 2}
   firePositions:
   - {fileID: 1835861443697613212}
   - {fileID: 4052472924193655365}
