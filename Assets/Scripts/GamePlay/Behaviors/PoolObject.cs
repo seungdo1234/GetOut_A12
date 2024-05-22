@@ -6,6 +6,5 @@ public class PoolObject : MonoBehaviour
     public T ReturnMyConponent<T>() where T : PoolObject
     {
         return this as T;
-    } 
-
+    }
 }

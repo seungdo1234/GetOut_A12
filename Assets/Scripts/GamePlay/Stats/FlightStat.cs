@@ -12,4 +12,10 @@ public class FlightStat
 
     [Header("# Bullet Animator")]
     public RuntimeAnimatorController BulletAnimator;
+    
+    [Header("# Player Stat")]
+    public int bulletNum;
+    public float bulletAngle;
+    public float bulletSpeed;
+    public float atkDelay;
 }
