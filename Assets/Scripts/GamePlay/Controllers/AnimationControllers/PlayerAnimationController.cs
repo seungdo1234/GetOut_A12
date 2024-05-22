@@ -29,4 +29,10 @@ public class PlayerAnimationController : FlightAnimationController
     {
         gameObject.layer = 6;
     }
+
+    private void PlayerDead()
+    {
+        gameObject.SetActive(false);
+        GameManager.Instance.GameOverUI.SetActive(true);
+    }
 }
