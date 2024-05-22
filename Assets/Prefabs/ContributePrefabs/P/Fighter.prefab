@@ -224,6 +224,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
+  attackSO: {fileID: 11400000, guid: a48e261cc29a8a84182e2f3639714da4, type: 2}
 --- !u!1 &5913146490924818774
 GameObject:
   m_ObjectHideFlags: 0

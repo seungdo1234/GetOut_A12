@@ -134,7 +134,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Destruction_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 27
+        width: 72
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af662fe363c979468d8a97b96ea82e8
+      internalID: -801315471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 27
+        width: 72
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf327bd299d450643ba92ed034164896
+      internalID: 1588182457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 27
+        width: 72
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb064a069b62a745897fab28dfe05bb
+      internalID: -588966052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_3
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 27
+        width: 72
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355ebc47de2efaa47b1fe38d931a33b2
+      internalID: 682475864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_4
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 27
+        width: 72
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1def503c10941498d987031f34d578
+      internalID: -2030054256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_5
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 27
+        width: 72
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6906e4746a843af4f96e043403d0319d
+      internalID: 999543595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_6
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 26
+        width: 72
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0522365a4f2b404aaa22affefbac9c7
+      internalID: 708744877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 21
+        width: 72
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60eda297a07ddb439c37fa13711cac8
+      internalID: -14548728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_8
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 18
+        width: 49
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2f8bd5a77d2cf4d8655a780c8573ab
+      internalID: 1768083614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_9
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 16
+        width: 58
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c09102662cdc940b37c5b769b2e7a1
+      internalID: -1418010464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_10
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 9
+        width: 65
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4d92aecb4e5de45a1c95e408fd072e
+      internalID: 970648989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 9
+        width: 65
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dda67ef5f835104dbee98d6d5070dac
+      internalID: -1811047497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_12
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 9
+        width: 65
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e1b60a4e3aece4cac1d7b6450972ba
+      internalID: 151506352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Destruction_13
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 9
+        width: 65
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9120d2a4df87847bf7ed3a08b3d308
+      internalID: 1344757608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +439,60 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boss_Destruction_0: -801315471
+      Boss_Destruction_1: 1588182457
+      Boss_Destruction_10: 970648989
+      Boss_Destruction_11: -1811047497
+      Boss_Destruction_12: 151506352
+      Boss_Destruction_13: 1344757608
+      Boss_Destruction_2: -588966052
+      Boss_Destruction_3: 682475864
+      Boss_Destruction_4: -2030054256
+      Boss_Destruction_5: 999543595
+      Boss_Destruction_6: 708744877
+      Boss_Destruction_7: -14548728
+      Boss_Destruction_8: 1768083614
+      Boss_Destruction_9: -1418010464
+      Kla'ed - Battlecruiser - Destruction_10: 1059962053
+      Kla'ed - Battlecruiser - Destruction_13: 888288012
+      Kla'ed - Battlecruiser - Destruction_15: -1863637038
+      Kla'ed - Battlecruiser - Destruction_16: -803875436
+      Kla'ed - Battlecruiser - Destruction_17: 114850366
+      Kla'ed - Battlecruiser - Destruction_18: 312664641
+      Kla'ed - Battlecruiser - Destruction_19: 621350516
+      Kla'ed - Battlecruiser - Destruction_20: -87309988
+      Kla'ed - Battlecruiser - Destruction_21: 1952157633
+      Kla'ed - Battlecruiser - Destruction_22: 101596494
+      Kla'ed - Battlecruiser - Destruction_23: -657222947
+      Kla'ed - Battlecruiser - Destruction_24: 274943579
+      Kla'ed - Battlecruiser - Destruction_25: -829191765
+      Kla'ed - Battlecruiser - Destruction_26: -1328928559
+      Kla'ed - Battlecruiser - Destruction_27: 39483663
+      Kla'ed - Battlecruiser - Destruction_28: -1690458204
+      Kla'ed - Battlecruiser - Destruction_29: -1616799060
+      Kla'ed - Battlecruiser - Destruction_30: -801614588
+      Kla'ed - Battlecruiser - Destruction_31: 880917613
+      Kla'ed - Battlecruiser - Destruction_32: -1118109832
+      Kla'ed - Battlecruiser - Destruction_33: 323872752
+      Kla'ed - Battlecruiser - Destruction_34: -295404734
+      Kla'ed - Battlecruiser - Destruction_35: 21647025
+      Kla'ed - Battlecruiser - Destruction_36: 1558490166
+      Kla'ed - Battlecruiser - Destruction_37: -214841500
+      Kla'ed - Battlecruiser - Destruction_38: 1702231938
+      Kla'ed - Battlecruiser - Destruction_39: -584533216
+      Kla'ed - Battlecruiser - Destruction_40: -929666975
+      Kla'ed - Battlecruiser - Destruction_41: -1660402749
+      Kla'ed - Battlecruiser - Destruction_42: 1091530862
+      Kla'ed - Battlecruiser - Destruction_43: 1418750420
+      Kla'ed - Battlecruiser - Destruction_44: -768341376
+      Kla'ed - Battlecruiser - Destruction_45: 2016425650
+      Kla'ed - Battlecruiser - Destruction_47: -959552185
+      Kla'ed - Battlecruiser - Destruction_48: -647342776
+      Kla'ed - Battlecruiser - Destruction_49: 893346955
+      Kla'ed - Battlecruiser - Destruction_50: 1411719033
+      Kla'ed - Battlecruiser - Destruction_51: 196248287
+      Kla'ed - Battlecruiser - Destruction_52: 1804182240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

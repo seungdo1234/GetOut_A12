@@ -20,14 +20,9 @@ public class FlightStatHandler : MonoBehaviour
     {
         CurrentStat = new FlightStat();
         CurrentStat.MoveSpeed = baseStat.MoveSpeed;
-        CurrentStat.AtkDelay = baseStat.AtkDelay;
         CurrentStat.AtkDamage = baseStat.AtkDamage;
         CurrentStat.MaxHealth = baseStat.MaxHealth;
-        CurrentStat.BulletNum = baseStat.BulletNum;
-        CurrentStat.BulletAngle = baseStat.BulletAngle;
-        CurrentStat.BulletSpeed = baseStat.BulletSpeed;
         CurrentStat.EFlightStatus= baseStat.EFlightStatus;
-        CurrentStat.BulletAnimator = baseStat.BulletAnimator;
     }
 
     public void Death()

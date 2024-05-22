@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class AutoBombAttackHandler : TopDownShooting
 {
+    [SerializeField] private BombAttackSO bombAttackSO;
     private Coroutine attackCoroutine;
-    [SerializeField] private float bombSpeed;
-    [SerializeField] private float explodeDelay;
     
     private void Start()
     {
@@ -26,10 +25,10 @@ public class AutoBombAttackHandler : TopDownShooting
 
     private IEnumerator AutoBombAttackCoroutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(flightStat.CurrentStat.AtkDelay);
+        WaitForSeconds wait = new WaitForSeconds(bombAttackSO.AtkDelay);
         while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
-            Bombing(flightStat.CurrentStat, bombSpeed, explodeDelay);
+            Bombing(bombAttackSO, bombAttackSO.BombSpeed, bombAttackSO.ExplodeDelay);
             yield return wait;
         }
     }

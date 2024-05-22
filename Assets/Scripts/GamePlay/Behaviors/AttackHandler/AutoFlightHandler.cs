@@ -5,12 +5,13 @@ using UnityEngine;
 public class AutoFlightHandler : TopDownShooting
 {
     [SerializeField] private float rotationDelay;
-    [SerializeField] private Transform targetPos;
 
+    private Transform targetPos;
     private Coroutine flightCoroutine;
 
     private void Start()
     {
+        targetPos = FlightDataManager.Instance.PlayerFlightStat.transform;
         AimFlight();
     }
 

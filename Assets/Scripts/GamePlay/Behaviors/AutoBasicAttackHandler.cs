@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class AutoBasicAttackHandler : TopDownShooting
 {
+    [SerializeField] private AttackSO attackSO;
     private Coroutine attackCoroutine;
-
     private bool isBasicAttackLock;
     private void Start()
     {
@@ -23,13 +23,13 @@ public class AutoBasicAttackHandler : TopDownShooting
     }
     private IEnumerator AutoBasicAttackCoroutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(flightStat.CurrentStat.AtkDelay);
+        WaitForSeconds wait = new WaitForSeconds(attackSO.AtkDelay);
 
         while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
             if (!isBasicAttackLock)
             {
-                Shooting(flightStat.CurrentStat);   
+                Shooting(attackSO);   
             }
             yield return wait;
         }
