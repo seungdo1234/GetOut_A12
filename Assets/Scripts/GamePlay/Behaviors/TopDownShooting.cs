@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
+[Serializable]
 public class TopDownShooting : MonoBehaviour
 {
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
+    
     protected FlightStatHandler flightStat;
     protected Rigidbody2D rigid;
     protected virtual void Awake()
@@ -13,12 +16,12 @@ public class TopDownShooting : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
     }
 
-    protected void Shooting(FlightStat flightStat)
+    protected void Shooting(AttackSO attackSO)
     {
         // 몇 도 만큼 각도를 띄울건지
-        float projectilesAngleSpace = flightStat.BulletAngle;
+        float projectilesAngleSpace = attackSO.BulletAngle;
         // 한 번에 몇발 나갈 건지
-        int numberOfProjectilePerShot = flightStat.BulletNum;
+        int numberOfProjectilePerShot = attackSO.BulletNum;
 
         // 최소 각 구하기
         float minAngle = -(numberOfProjectilePerShot / 2f) * projectilesAngleSpace +
@@ -27,16 +30,16 @@ public class TopDownShooting : MonoBehaviour
         for (int i = 0; i < numberOfProjectilePerShot; i++)
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            SpawnBullet(flightStat, angle);
+            SpawnBullet(attackSO, angle);
         }
     }
 
-    protected void Shooting(FlightStat flightStat, Transform position)
+    protected void Shooting(AttackSO attackSO, Transform position)
     {
         // 몇 도 만큼 각도를 띄울건지
-        float projectilesAngleSpace = flightStat.BulletAngle;
+        float projectilesAngleSpace = attackSO.BulletAngle;
         // 한 번에 몇발 나갈 건지
-        int numberOfProjectilePerShot = flightStat.BulletNum;
+        int numberOfProjectilePerShot = attackSO.BulletNum;
 
         // 최소 각 구하기
         float minAngle = -(numberOfProjectilePerShot / 2f) * projectilesAngleSpace +
@@ -45,17 +48,17 @@ public class TopDownShooting : MonoBehaviour
         for (int i = 0; i < numberOfProjectilePerShot; i++)
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            SpawnBullet(flightStat, angle, position);
+            SpawnBullet(attackSO, angle, position);
         }
     }
 
-    protected void Shooting(FlightStat flightStat, float angle)
+    protected void Shooting(AttackSO attackSO, float angle)
     {
         // 정해진 각도로 바로 발사
-        SpawnBullet(flightStat, angle);
+        SpawnBullet(attackSO, angle);
     }
 
-    protected void Bombing(FlightStat flightStat, float bombSpeed, float explodeDelay)
+    protected void Bombing(AttackSO attackSO, float bombSpeed, float explodeDelay)
     {
         Bomb bomb = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bomb).ReturnMyConponent<Bomb>();
         if (bomb != null)
@@ -63,27 +66,27 @@ public class TopDownShooting : MonoBehaviour
             bomb.transform.position = weaponPivot.position;
             bomb.DropBomb(bombSpeed);
 
-            StartCoroutine(DelayShooting(explodeDelay, flightStat, bomb.transform));
+            StartCoroutine(DelayShooting(explodeDelay, attackSO, bomb.transform));
                 
         }
     }
 
-    IEnumerator DelayShooting(float explodeDelay, FlightStat flightStat, Transform bomb)
+    IEnumerator DelayShooting(float explodeDelay, AttackSO attackSO, Transform bomb)
     {
         WaitForSecondsRealtime wait = new WaitForSecondsRealtime(explodeDelay);
         yield return wait;
-        Shooting(flightStat, bomb.transform);
+        Shooting(attackSO, bomb.transform);
         bomb.gameObject.SetActive(false);
     }
 
-    private void SpawnBullet(FlightStat flightStat, float angle)
+    private void SpawnBullet(AttackSO attackSO, float angle)
     {
         Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyConponent<Bullet>();
         if (bullet != null)
         {
             bullet.transform.position = weaponPivot.position; 
             bullet.transform.Rotate(0, 0, angle);
-            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);   
+            bullet.BulletInit(attackSO.AtkDamage, attackSO.BulletSpeed, attackSO.BulletAnimator, targetLayer);   
         }
         else
         {
@@ -91,14 +94,14 @@ public class TopDownShooting : MonoBehaviour
         }
     }
 
-    private void SpawnBullet(FlightStat flightStat, float angle, Transform position)
+    private void SpawnBullet(AttackSO attackSO, float angle, Transform position)
     {
         Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyConponent<Bullet>();
         if (bullet != null)
         {
             bullet.transform.position = position.position;
             bullet.transform.Rotate(0, 0, angle);
-            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);
+            bullet.BulletInit(attackSO.AtkDamage, attackSO.BulletSpeed, attackSO.BulletAnimator, targetLayer);
         }
         else
         {

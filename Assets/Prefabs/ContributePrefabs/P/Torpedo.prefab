@@ -317,6 +317,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
+  attackSO: {fileID: 11400000, guid: 5ae312ea1451e574a9ac59fffae60877, type: 2}
   firePositions:
   - {fileID: 3206464574733082151}
   - {fileID: 8482907481616258316}

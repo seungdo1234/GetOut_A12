@@ -339,8 +339,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
-  bombSpeed: -3
-  explodeDelay: 1
+  bombAttackSO: {fileID: 11400000, guid: 4c0c338b8a1e7a74886289a06ad9bd30, type: 2}
 --- !u!1 &6841858195610128976
 GameObject:
   m_ObjectHideFlags: 0

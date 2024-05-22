@@ -224,7 +224,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
-  anglePerFire: 30
+  circularAttackSO: {fileID: 11400000, guid: ae483b975e8e5d74ba6910799a47855b, type: 2}
 --- !u!1 &3802211351139278590
 GameObject:
   m_ObjectHideFlags: 0

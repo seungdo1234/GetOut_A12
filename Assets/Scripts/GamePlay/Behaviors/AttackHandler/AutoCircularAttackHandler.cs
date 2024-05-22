@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class AutoCircularAttackHandler : TopDownShooting
 {
-    [SerializeField] private float anglePerFire;
+    [SerializeField] private CircularAttackSO circularAttackSO;
     private float curAngle = 0f;
     private float div = 360f;
     private Coroutine attackCoroutine;
@@ -26,11 +26,11 @@ public class AutoCircularAttackHandler : TopDownShooting
 
     private IEnumerator AutoCircularAttackCoroutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(flightStat.CurrentStat.AtkDelay);
+        WaitForSeconds wait = new WaitForSeconds(circularAttackSO.AtkDelay);
         while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
-            Shooting(flightStat.CurrentStat, curAngle);
-            curAngle = (curAngle - anglePerFire) % div;
+            Shooting(circularAttackSO, curAngle);
+            curAngle = (curAngle - circularAttackSO.AnglePerFire) % div;
             yield return wait;
         }
     }

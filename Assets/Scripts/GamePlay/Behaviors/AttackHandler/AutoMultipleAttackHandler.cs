@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AutoMultipleAttackHandler : TopDownShooting
 {
+    [SerializeField] private AttackSO attackSO;
     [SerializeField] private List<Transform> firePositions;
     private Coroutine attackCoroutine;
 
@@ -25,13 +26,13 @@ public class AutoMultipleAttackHandler : TopDownShooting
 
     private IEnumerator AutoMultipleAttackCoroutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(flightStat.CurrentStat.AtkDelay);
+        WaitForSeconds wait = new WaitForSeconds(attackSO.AtkDelay);
         while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
             // firePoints들을 순회하면서 발사
             foreach(Transform firePosition in firePositions)
             {
-                Shooting(flightStat.CurrentStat, firePosition);
+                Shooting(attackSO, firePosition);
                 yield return wait;
             }
         }
