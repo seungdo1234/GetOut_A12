@@ -6,6 +6,7 @@ using UnityEngine;
  
 public class Item : MonoBehaviour
 {
+    [SerializeField] private LayerMask targetLayer;
     EWeaponType itemType;
     [SerializeField] private float dropSpeed = 2.0f;
     Rigidbody2D rd;
@@ -21,14 +22,17 @@ public class Item : MonoBehaviour
         itemType = type;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (IsLayerMatched(targetLayer.value, other.gameObject.layer ))
         {
             ItemManager.Instance.SpecialWeaponHandler.EquipSpecialWeapon(itemType);
             Destroy(this.gameObject);
         }
+    }
+    
+    private bool IsLayerMatched(int layerMask, int objectLayer)
+    {
+        return layerMask == (layerMask | (1 << objectLayer));
     }
 }

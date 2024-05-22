@@ -1,27 +1,23 @@
 using System;
 using UnityEngine;
 
-public class EnemyAnimationController : TopDownAnimationController
+public class EnemyAnimationController : FlightAnimationController
 {
-    private readonly int Dead = Animator.StringToHash("Dead");
 
-    private HealthSystem healthSystem;
     protected override void Awake()
     {
         base.Awake();
-        healthSystem = GetComponent<HealthSystem>();
+    }
+    
+    protected override void Start()
+    {
+        base.Start();
+        healthSystem.OnDamage += TakeDamage;
     }
 
-    private void Start()
+    private void TakeDamage()
     {
-        if(healthSystem != null)
-        {
-            healthSystem.OnDeath += Death;
-        }
+        anim.SetTrigger(Hit);
     }
-
-    private void Death()
-    {
-        anim.SetTrigger(Dead);
-    }
+    
 }
