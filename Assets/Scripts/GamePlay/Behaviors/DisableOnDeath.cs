@@ -6,6 +6,7 @@ public class DisableOnDeath : MonoBehaviour
     {
         ItemManager.Instance.DropInfo(transform.position);
         gameObject.SetActive(false);
+        GameManager.Instance.PhaseManager.CheckClear();
     }
 
 }

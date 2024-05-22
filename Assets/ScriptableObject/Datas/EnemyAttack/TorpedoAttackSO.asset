@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dbe1be4017b76049bdeb041bf518bd4, type: 3}
   m_Name: TorpedoAttackSO
   m_EditorClassIdentifier: 
-  BulletNum: 1
+  BulletNum: 3
+  BulletAngle: 15
+  BulletSpeed: -3
   AtkDamage: 1
-  AtkDelay: 0.4
-  BulletAngle: 0
-  BulletSpeed: -1
+  AtkDelay: 0.5
   BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}

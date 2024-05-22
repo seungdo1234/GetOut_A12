@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: FighterAttackSO
   m_EditorClassIdentifier: 
   BulletNum: 3
+  BulletAngle: 20
+  BulletSpeed: -3
   AtkDamage: 1
-  AtkDelay: 1
-  BulletAngle: 30
-  BulletSpeed: -1
+  AtkDelay: 0.7
   BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
