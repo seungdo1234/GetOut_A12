@@ -11,17 +11,21 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PhaseManager phaseManager;
     public PoolManager Pool => poolManager;
     public PhaseManager PhaseManager => phaseManager;
-    
+    [field:SerializeField]public GameObject GameOverUI { get; private set; }
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(Instance);
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        AudioManager.instance.PlayBgm(Bgm.MainBgm, true);
     }
 }

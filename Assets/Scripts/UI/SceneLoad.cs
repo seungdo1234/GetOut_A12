@@ -15,8 +15,12 @@ public class SceneLoad : MonoBehaviour
     {
         //버튼 작동, "MainScene"으로 전환. File - Build Settings에서 이동 할 씬들을 등록해야 작동 함.
         SceneManager.LoadScene("MainScene");
-        
-
+    }
+    
+    public void OnClickLobby()
+    {
+        AudioManager.instance.PlayBgm(Bgm.StartBgm, true);
+        SceneManager.LoadScene("StartScene");
     }
 
 

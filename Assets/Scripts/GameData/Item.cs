@@ -27,6 +27,7 @@ public class Item : MonoBehaviour
         if (IsLayerMatched(targetLayer.value, other.gameObject.layer ))
         {
             ItemManager.Instance.SpecialWeaponEquipHandler.EquipSpecialWeapon(itemType);
+            AudioManager.instance.PlaySfx(Sfx.ItemEqu);
             Destroy(this.gameObject);
         }
     }

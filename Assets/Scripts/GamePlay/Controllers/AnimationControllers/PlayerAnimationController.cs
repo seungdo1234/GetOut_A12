@@ -19,6 +19,7 @@ public class PlayerAnimationController : FlightAnimationController
     private void TakeDamage()
     {
         anim.SetTrigger(Hit);
+        AudioManager.instance.PlaySfx(Sfx.PlayerHit);
     }
     
     private void InvisibilityOn()
@@ -28,5 +29,11 @@ public class PlayerAnimationController : FlightAnimationController
     private void InvisibilityOff()
     {
         gameObject.layer = 6;
+    }
+
+    private void PlayerDead()
+    {
+        gameObject.SetActive(false);
+        GameManager.Instance.GameOverUI.SetActive(true);
     }
 }

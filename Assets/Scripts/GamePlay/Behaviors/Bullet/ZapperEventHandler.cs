@@ -54,6 +54,7 @@ public class ZapperEventHandler : SpecialWeaponController
     private IEnumerator FireLaserCoroutine()
     {
         WaitForSeconds wait = new WaitForSeconds(0.01f);
+        AudioManager.instance.PlayZapperSfx(true);
         
         while (zapperProjectile.gameObject.activeSelf)
         { 
@@ -67,12 +68,15 @@ public class ZapperEventHandler : SpecialWeaponController
             }
             yield return wait;
         }
+        
+        AudioManager.instance.PlayZapperSfx(false);
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
         DisableZapper();
+        AudioManager.instance.PlayZapperSfx(false);
         StopFireZapperCoroutine();
     }
 

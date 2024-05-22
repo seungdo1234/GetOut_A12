@@ -25,6 +25,12 @@ public class TopDownMovement : MonoBehaviour
         movementDir = dir;
     }
     
+    public void ResetVelocity() // 플레이어 움직임이 제한될 때 호출
+    {
+        movementDir = Vector2.zero;
+        rigid.velocity = Vector2.zero;
+    }
+    
     private void ApplyMovement(Vector2 dir) // 실제로 이동을 하는 함수
     {
         // 스탯 적용

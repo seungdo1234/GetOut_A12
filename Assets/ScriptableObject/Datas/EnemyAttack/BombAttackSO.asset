@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99731d7665b5cd346afffe645a478737, type: 3}
   m_Name: BombAttackSO
   m_EditorClassIdentifier: 
-  BulletNum: 12
-  BulletAngle: 30
+  BulletNum: 24
+  BulletAngle: 15
   BulletSpeed: -3
   AtkDamage: 1
-  AtkDelay: 5
+  AtkDelay: 2
   BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
   BombSpeed: -1
-  ExplodeDelay: 2.5
+  ExplodeDelay: 3.5
