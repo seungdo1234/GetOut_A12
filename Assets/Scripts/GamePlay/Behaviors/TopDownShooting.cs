@@ -1,16 +1,27 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
+[Serializable]
 public class TopDownShooting : MonoBehaviour
 {
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
     
-    protected void Shooting(FlightStat flightStat, string tag)
+    protected FlightStatHandler flightStat;
+    protected Rigidbody2D rigid;
+    protected virtual void Awake()
+    {
+        flightStat = GetComponent<FlightStatHandler>();
+        rigid = GetComponent<Rigidbody2D>();
+    }
+
+    protected void Shooting(AttackSO attackSO)
     {
         // 몇 도 만큼 각도를 띄울건지
-        float projectilesAngleSpace = flightStat.BulletAngle;
+        float projectilesAngleSpace = attackSO.BulletAngle;
         // 한 번에 몇발 나갈 건지
-        int numberOfProjectilePerShot = flightStat.BulletNum;
+        int numberOfProjectilePerShot = attackSO.BulletNum;
 
         // 최소 각 구하기
         float minAngle = -(numberOfProjectilePerShot / 2f) * projectilesAngleSpace +
@@ -19,22 +30,82 @@ public class TopDownShooting : MonoBehaviour
         for (int i = 0; i < numberOfProjectilePerShot; i++)
         {
             float angle = minAngle + i * projectilesAngleSpace;
-            CreateBullet(flightStat, angle, tag);
+            SpawnBullet(attackSO, angle);
         }
     }
 
-    private void CreateBullet(FlightStat flightStat, float angle, string tag)
+    protected void Shooting(AttackSO attackSO, Transform position)
     {
-        PoolObject bullet = GameManager.Instance.Pool.SpawnFromPool(tag);
-        bullet.transform.position = weaponPivot.position;
-        bullet.transform.Rotate(0, 0, angle);
-        if(flightStat.BulletAnimator != null)
+        // 몇 도 만큼 각도를 띄울건지
+        float projectilesAngleSpace = attackSO.BulletAngle;
+        // 한 번에 몇발 나갈 건지
+        int numberOfProjectilePerShot = attackSO.BulletNum;
+
+        // 최소 각 구하기
+        float minAngle = -(numberOfProjectilePerShot / 2f) * projectilesAngleSpace +
+                         0.5f * projectilesAngleSpace;
+
+        for (int i = 0; i < numberOfProjectilePerShot; i++)
         {
-            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletAnimator, targetLayer);
+            float angle = minAngle + i * projectilesAngleSpace;
+            SpawnBullet(attackSO, angle, position);
+        }
+    }
+
+    protected void Shooting(AttackSO attackSO, float angle)
+    {
+        // 정해진 각도로 바로 발사
+        SpawnBullet(attackSO, angle);
+    }
+
+    protected void Bombing(AttackSO attackSO, float bombSpeed, float explodeDelay)
+    {
+        Bomb bomb = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bomb).ReturnMyConponent<Bomb>();
+        if (bomb != null)
+        {
+            bomb.transform.position = weaponPivot.position;
+            bomb.DropBomb(bombSpeed);
+
+            StartCoroutine(DelayShooting(explodeDelay, attackSO, bomb.transform));
+                
+        }
+    }
+
+    IEnumerator DelayShooting(float explodeDelay, AttackSO attackSO, Transform bomb)
+    {
+        WaitForSecondsRealtime wait = new WaitForSecondsRealtime(explodeDelay);
+        yield return wait;
+        Shooting(attackSO, bomb.transform);
+        bomb.gameObject.SetActive(false);
+    }
+
+    private void SpawnBullet(AttackSO attackSO, float angle)
+    {
+        Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyConponent<Bullet>();
+        if (bullet != null)
+        {
+            bullet.transform.position = weaponPivot.position; 
+            bullet.transform.Rotate(0, 0, angle);
+            bullet.BulletInit(attackSO.AtkDamage, attackSO.BulletSpeed, attackSO.BulletAnimator, targetLayer);   
         }
         else
         {
-            bullet.BulletInit(flightStat.AtkDamage, flightStat.BulletSpeed, flightStat.BulletOverrideAnimator, targetLayer);
+            Debug.Log("Bullet Null Error");
+        }
+    }
+
+    private void SpawnBullet(AttackSO attackSO, float angle, Transform position)
+    {
+        Bullet bullet = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bullet).ReturnMyConponent<Bullet>();
+        if (bullet != null)
+        {
+            bullet.transform.position = position.position;
+            bullet.transform.Rotate(0, 0, angle);
+            bullet.BulletInit(attackSO.AtkDamage, attackSO.BulletSpeed, attackSO.BulletAnimator, targetLayer);
+        }
+        else
+        {
+            Debug.Log("Bullet Null Error");
         }
     }
 }
