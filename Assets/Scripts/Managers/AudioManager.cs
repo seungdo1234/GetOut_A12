@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
     public int channels; //다양한 효과음을 낼 수 있는 채널 개수 변수
     AudioSource[] sfxPlayers; //효과음과 관련된 클립
     int channelIndex;
-    
+
     private void Awake()
     {
         if (instance == null)
