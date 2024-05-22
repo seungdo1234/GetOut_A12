@@ -9,19 +9,21 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance; //정적 메모리에 담기 위한 instance 변수 선언
 
-    [Header("#BGM")]  //시작 음악
+    [Header("#BGM")] //시작 음악
     public AudioClip[] bgmClip; //배경음과 관련된 클립
-    public float bgmVolume;  //배경음과 관련된 볼륨     
-    AudioSource bgmPlayer;  //배경음과 관련된 오디오 소스
+
+    public float bgmVolume; //배경음과 관련된 볼륨     
+    AudioSource bgmPlayer; //배경음과 관련된 오디오 소스
 
 
     [Header("#SFX")] //효과음
     public AudioClip[] sfxClips; //효과음과 관련된 클립
-    public float sfxVolume;  //효과음과 관련된 클립
-    public int channels;  //다양한 효과음을 낼 수 있는 채널 개수 변수
-    AudioSource[] sfxPlayers;  //효과음과 관련된 클립
+
+    public float sfxVolume; //효과음과 관련된 클립
+    public int channels; //다양한 효과음을 낼 수 있는 채널 개수 변수
+    AudioSource[] sfxPlayers; //효과음과 관련된 클립
     int channelIndex;
-    
+
 
 
     private void Awake()
@@ -43,11 +45,11 @@ public class AudioManager : MonoBehaviour
         //배경음 플레이어 초기화
         GameObject bgmobject = new GameObject("BgmPlayer");
         bgmobject.transform.parent = transform; //배경음을 담당하는 자식 오브젝트
-        bgmPlayer = bgmobject.AddComponent<AudioSource>();  //AddComponent함수로 오디오 소스 생성 후 변수에 저장
-        bgmPlayer.playOnAwake = false;  //캐릭터 누를때 배경음악 활성화
-        bgmPlayer.loop = true;  //배경음악 루프
+        bgmPlayer = bgmobject.AddComponent<AudioSource>(); //AddComponent함수로 오디오 소스 생성 후 변수에 저장
+        bgmPlayer.playOnAwake = false; //캐릭터 누를때 배경음악 활성화
+        bgmPlayer.loop = true; //배경음악 루프
         bgmPlayer.volume = bgmVolume; //볼륨
-        
+
 
         //효과음 플레이어 초기화
         GameObject sfxobject = new GameObject("sfxPlayer");
@@ -61,6 +63,9 @@ public class AudioManager : MonoBehaviour
             sfxPlayers[index].volume = sfxVolume;
         }
 
+        sfxPlayers[0].clip = sfxClips[(int)Sfx.Zapper];
+        sfxPlayers[0].loop = true;
+
     }
 
     private void Start()
@@ -68,7 +73,7 @@ public class AudioManager : MonoBehaviour
         PlayBgm(Bgm.StartBgm, true);
     }
 
-    public void PlayBgm( Bgm bgm, bool isplay) //배경음 재생 함수
+    public void PlayBgm(Bgm bgm, bool isplay) //배경음 재생 함수
     {
         if (isplay) //상황에 따른 배경음 교체
         {
@@ -87,7 +92,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySfx(Sfx sfx) //효과음 재생 함수
     {
-        for (int index = 0; index < sfxPlayers.Length; index++)
+        for (int index = 1; index < sfxPlayers.Length; index++)
         {
             int loopIndex = (index + channelIndex) % sfxPlayers.Length;
 
@@ -100,7 +105,18 @@ public class AudioManager : MonoBehaviour
             break;
 
         }
+    }
 
+    public void PlayZapperSfx(bool isTrue)
+    {
+        if (isTrue)
+        {
+            sfxPlayers[0].Play();
+        }
+        else
+        {
+            sfxPlayers[0].Stop();
+        }
     }
 
 }
