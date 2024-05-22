@@ -254,12 +254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 0.5
     AtkDamage: 1
     MaxHealth: 6
-    BulletNum: 1
-    BulletAngle: 0
-    BulletSpeed: 7
     EFlightStatus: 0
     BulletAnimator: {fileID: 9100000, guid: a1f64fc3360f66b478b2ca82b7e7b3ba, type: 2}
   statModifiers: []
@@ -292,6 +288,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
+  attackSO: {fileID: 11400000, guid: 8f90e9d19fadd594bbbf13f1db3c5bc1, type: 2}
 --- !u!114 &6933762188987577298
 MonoBehaviour:
   m_ObjectHideFlags: 0
