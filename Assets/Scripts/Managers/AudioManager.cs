@@ -23,11 +23,7 @@ public class AudioManager : MonoBehaviour
     public int channels; //다양한 효과음을 낼 수 있는 채널 개수 변수
     AudioSource[] sfxPlayers; //효과음과 관련된 클립
     int channelIndex;
-
-    public enum Sfx { EnemyHit, EnemyDead, PlayerAtk, PlayerHit, playerMove, ItemCon, ItemEqu } //적군 타격, 적군 사망, 플레이어 공격, 플레이어 타격, 플레이어 움직임, 소비 아이템 장착, 무기 아이템 장착
-    public enum Bgm { StartBgm, MainBgm, BossBgm } //시작 브금, 메인 브금, 보스 등장 BGM
-
-
+    
     private void Awake()
     {
         if (instance == null)
