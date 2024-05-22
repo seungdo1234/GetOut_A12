@@ -4,7 +4,8 @@ public class PlayerAnimationController : FlightAnimationController
 {
     private readonly int isMoving = Animator.StringToHash("isMoving");
     private readonly int Hit = Animator.StringToHash("isInvisibility");
-    
+
+    [SerializeField] private PlayerHealthUIHandler playerHealthUIHandler;
     protected override void Start()
     {
         base.Start();
@@ -20,6 +21,7 @@ public class PlayerAnimationController : FlightAnimationController
     private void TakeDamage()
     {
         anim.SetTrigger(Hit);
+        playerHealthUIHandler.UpdateHeart();
         AudioManager.instance.PlaySfx(Sfx.PlayerHit);
     }
     

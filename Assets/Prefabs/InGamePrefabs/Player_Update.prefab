@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b150f71e8a34b01ad894948ee585f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealthUIHandler: {fileID: 0}
 --- !u!114 &2137473693146402215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,8 +262,8 @@ MonoBehaviour:
     BulletAnimator: {fileID: 9100000, guid: a1f64fc3360f66b478b2ca82b7e7b3ba, type: 2}
     bulletNum: 1
     bulletAngle: 5
-    bulletSpeed: 7
-    atkDelay: 0.5
+    bulletSpeed: 8
+    atkDelay: 0.25
   statModifiers: []
 --- !u!114 &3088780203460410037
 MonoBehaviour:
