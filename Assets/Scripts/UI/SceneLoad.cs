@@ -14,7 +14,7 @@ public class SceneLoad : MonoBehaviour
     public void OnCllickNewGame()
     {
         //버튼 작동, "MainScene"으로 전환. File - Build Settings에서 이동 할 씬들을 등록해야 작동 함.
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Dev_MainScene");
     }
     
     public void OnClickLobby()

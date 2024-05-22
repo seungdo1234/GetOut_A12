@@ -14,6 +14,7 @@ public class PlayerAnimationController : FlightAnimationController
     
     private void Move(Vector2 direction)
     {
+        AudioManager.instance.PlaySfx(Sfx.PlayerMove);
         anim.SetBool(isMoving, direction.magnitude != 0);
     }
     private void TakeDamage()

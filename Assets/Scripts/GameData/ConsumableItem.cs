@@ -26,6 +26,8 @@ public class ConsumableItem : PoolObject
     {
         if (IsLayerMatched(targetLayer.value, other.gameObject.layer))
         {
+            
+            AudioManager.instance.PlaySfx(Sfx.ItemCon);
             switch (consumableItemType)
             {
                 case EConsumableItemType.AttackUp:
