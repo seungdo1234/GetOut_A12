@@ -16,9 +16,7 @@ public class SpecialWeaponUIHandler : MonoBehaviour
     {
         gameObject.SetActive(true);
         this.specialWeaponController = specialWeaponController;
-        Debug.Log(specialWeaponController.WeaponType);
         specialWeaponIcon.sprite = specialWeaponSprites[(int)specialWeaponController.WeaponType - 1];
-        Debug.Log(specialWeaponSprites[(int)specialWeaponController.WeaponType - 1].name);
     }
 
     private void Update()
