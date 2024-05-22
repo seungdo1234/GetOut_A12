@@ -8,7 +8,7 @@ public class ZapperEventHandler : SpecialWeaponController
 
     private AutoBasicAttackHandler autoBasicAttackHandler;
     
-    [SerializeField] private float maxFireDuration = 5.0f;
+    [SerializeField] private float maxFireDuration = 50.0f;
     private float bulletCountPerSecond;
     private Coroutine fireZapperCoroutine;
     
@@ -53,9 +53,11 @@ public class ZapperEventHandler : SpecialWeaponController
 
     private IEnumerator FireLaserCoroutine()
     {
+        WaitForSeconds wait = new WaitForSeconds(0.01f);
+        
         while (zapperProjectile.gameObject.activeSelf)
         { 
-            CurBulletCount -= Mathf.CeilToInt(bulletCountPerSecond * Time.deltaTime);
+            CurBulletCount --;
             if (CurBulletCount < 0)
             {
                 DisableZapper();
@@ -63,7 +65,7 @@ public class ZapperEventHandler : SpecialWeaponController
                 gameObject.SetActive(false);
                 break;
             }
-            yield return null;
+            yield return wait;
         }
     }
 

@@ -1125,11 +1125,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specialWeaponData:
     weaponType: 3
-    atkPercent: 2
+    atkPercent: 5
     weaponPivots: []
     bulletCount: 500
     bulletsPerShot: 0
-    weaponAtkDelay: 1.5
+    weaponAtkDelay: 2
     weaponSpeed: 0
     bulletAnimator: {fileID: 0}
   specialWeaponUIHandler: {fileID: 0}
@@ -1270,7 +1270,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 95e72852a0852c04bb9403e58112218a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1471,7 +1471,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4524220121122766893, guid: d68ab9a631ce844419d459f851941164, type: 3}
       propertyPath: m_DrawMode
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524220121122766893, guid: d68ab9a631ce844419d459f851941164, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5811455400846564747, guid: d68ab9a631ce844419d459f851941164, type: 3}
       propertyPath: m_Name
@@ -1593,7 +1597,7 @@ BoxCollider2D:
     oldSize: {x: 0.8888889, y: 0.8888889}
     newSize: {x: 0.8888889, y: 0.8888889}
     adaptiveTilingThreshold: 0.5
-    drawMode: 2
+    drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
