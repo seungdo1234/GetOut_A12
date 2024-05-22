@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 996618051003176892}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -306,7 +306,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.05}
+  m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.6, y: 0.7}
   m_Direction: 0
 --- !u!50 &582470058656061686
@@ -402,7 +402,7 @@ MonoBehaviour:
     BulletAngle: 0
     BulletSpeed: -5
     EFlightStatus: 0
-    BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
+    BulletAnimator: {fileID: 22100000, guid: 03c8b8b038f93584f992d850e9a41b25, type: 2}
   statModifiers: []
 --- !u!114 &263631638447748584
 MonoBehaviour:

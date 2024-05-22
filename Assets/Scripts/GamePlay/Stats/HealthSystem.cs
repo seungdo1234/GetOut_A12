@@ -31,13 +31,6 @@ public class HealthSystem : MonoBehaviour
         curHealth += amount;
         curHealth = Mathf.Clamp(curHealth, 0, MaxHealth);
 
-        if (curHealth <= 0f)
-        {
-            statHandler.Death();
-            CallDeathEvent();
-            return;
-        }
-
         if(amount >= 0)
         {
             OnHeal?.Invoke();
@@ -46,6 +39,14 @@ public class HealthSystem : MonoBehaviour
         {
             OnDamage?.Invoke();
         }
+        
+        if (curHealth <= 0f)
+        {
+            statHandler.Death();
+            CallDeathEvent();
+            return;
+        }
+        
     }
 
     private void CallDeathEvent()

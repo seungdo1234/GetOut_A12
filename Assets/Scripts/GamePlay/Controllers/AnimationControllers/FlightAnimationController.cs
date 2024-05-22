@@ -1,17 +1,31 @@
 using UnityEngine;
 
-public class FlightAnimationController : TopDownAnimationController
+public class FlightAnimationController : MonoBehaviour
 {
-    private readonly int isMoving = Animator.StringToHash("isMoving");
+    protected TopDownController topDownController;
+    protected HealthSystem healthSystem;
+    protected Animator anim;
 
-    private void Start()
+    private readonly int Dead = Animator.StringToHash("Dead");
+    protected readonly int Hit = Animator.StringToHash("isInvisibility");
+    protected virtual void Awake()
     {
-        topDownController.OnMoveEvent += Move;
+        topDownController = GetComponent<TopDownController>();
+        anim = GetComponent<Animator>();
+        healthSystem = GetComponent<HealthSystem>();
     }
     
-    private void Move(Vector2 direction)
+    protected virtual void Start()
     {
-        anim.SetBool(isMoving, direction.magnitude != 0);
+        if(healthSystem != null)
+        {
+            healthSystem.OnDeath += Death;
+        }
+    }
+    
+    private void Death()
+    {
+        anim.SetTrigger(Dead);
     }
     
 }
