@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ScoutAttackSO
   m_EditorClassIdentifier: 
   BulletNum: 1
+  BulletAngle: 0
+  BulletSpeed: -4
   AtkDamage: 1
   AtkDelay: 0.5
-  BulletAngle: 0
-  BulletSpeed: -5
   BulletAnimator: {fileID: 22100000, guid: 1665c05dd51d06b448cb32746b8aed77, type: 2}
