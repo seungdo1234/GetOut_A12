@@ -62,8 +62,8 @@ public class AudioManager : MonoBehaviour
             sfxPlayers[index].playOnAwake = false;
             sfxPlayers[index].volume = sfxVolume;
         }
-
-        sfxPlayers[0].clip = sfxClips[(int)Sfx.Zapper];
+        
+        
         sfxPlayers[0].loop = true;
 
     }
@@ -111,6 +111,7 @@ public class AudioManager : MonoBehaviour
     {
         if (isTrue)
         {
+            sfxPlayers[0].clip = sfxClips[(int)Sfx.Zapper];
             sfxPlayers[0].Play();
         }
         else
