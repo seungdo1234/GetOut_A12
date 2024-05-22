@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletNum: 1
   BulletAngle: 0
-  BulletSpeed: 3
+  BulletSpeed: 5
   AtkDamage: 1
-  AtkDelay: 0.5
+  AtkDelay: 0.25
   BulletAnimator: {fileID: 9100000, guid: a1f64fc3360f66b478b2ca82b7e7b3ba, type: 2}
