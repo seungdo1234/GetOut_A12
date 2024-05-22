@@ -22,4 +22,9 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void Start()
+    {
+        AudioManager.instance.PlayBgm(Bgm.MainBgm, true);
+    }
 }

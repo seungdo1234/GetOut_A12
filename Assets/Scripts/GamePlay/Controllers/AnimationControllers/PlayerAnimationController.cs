@@ -19,6 +19,7 @@ public class PlayerAnimationController : FlightAnimationController
     private void TakeDamage()
     {
         anim.SetTrigger(Hit);
+        AudioManager.instance.PlaySfx(Sfx.PlayerHit);
     }
     
     private void InvisibilityOn()

@@ -21,15 +21,21 @@ public class AudioManager : MonoBehaviour
     public int channels;  //다양한 효과음을 낼 수 있는 채널 개수 변수
     AudioSource[] sfxPlayers;  //효과음과 관련된 클립
     int channelIndex;
-
-    public enum Sfx { EnemyHit, PlayerAtk, PlayerHit, ItemCon, ItemEqu } //적군 타격, 플레이어 공격, 플레이어 타격, 소비 아이템 장착, 무기 아이템 장착
-    public enum Bgm { StartBgm, MainBgm, BossBgm } //시작 브금, 메인 브금, 보스 등장 BGM
+    
 
 
     private void Awake()
     {
-        instance = this; //instance 초기화
-        Init(); //초기화 함수???
+        if (instance == null)
+        {
+            instance = this; //instance 초기화
+            Init(); //초기화 함수???
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Init()
@@ -41,7 +47,7 @@ public class AudioManager : MonoBehaviour
         bgmPlayer.playOnAwake = false;  //캐릭터 누를때 배경음악 활성화
         bgmPlayer.loop = true;  //배경음악 루프
         bgmPlayer.volume = bgmVolume; //볼륨
-
+        
 
         //효과음 플레이어 초기화
         GameObject sfxobject = new GameObject("sfxPlayer");
@@ -55,6 +61,11 @@ public class AudioManager : MonoBehaviour
             sfxPlayers[index].volume = sfxVolume;
         }
 
+    }
+
+    private void Start()
+    {
+        PlayBgm(Bgm.StartBgm, true);
     }
 
     public void PlayBgm( Bgm bgm, bool isplay) //배경음 재생 함수

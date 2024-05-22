@@ -28,6 +28,7 @@ public class FlightStatHandler : MonoBehaviour
     public void Death()
     {
         CurrentStat.EFlightStatus = EFlightStatus.Dead;
+        AudioManager.instance.PlaySfx(Sfx.EnemyHit);
     }
 }
 
