@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [SerializeField] private PoolManager poolManager;
+    [SerializeField] private PhaseManager phaseManager;
     public PoolManager Pool => poolManager;
+    public PhaseManager PhaseManager => phaseManager;
     
     private void Awake()
     {
