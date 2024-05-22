@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpecialBulletEventHandler : SpecialWeaponController
@@ -16,7 +17,16 @@ public class SpecialBulletEventHandler : SpecialWeaponController
     {
         if (isPress && !isDelay)
         {
-            StartCoroutine(WaitSpecialWeaponDelayTime());
+            if (waitDelayCoroutine != null)
+            {
+                StopCoroutine(waitDelayCoroutine);
+            }
+
+            if (gameObject.activeSelf)
+            {
+                waitDelayCoroutine = StartCoroutine(WaitSpecialWeaponDelayTime());   
+            }
+            
             anim.SetTrigger(isSpecialFire);
         }
     }
@@ -33,7 +43,7 @@ public class SpecialBulletEventHandler : SpecialWeaponController
         if (--CurBulletCount == 0)
         {
             topDownController.OnSpecialFireEvent -= SpecialBulletFireEvent;
-            StopCoroutine(WaitSpecialWeaponDelayTime());
+            StopCoroutine(waitDelayCoroutine);
             gameObject.SetActive(false);
         }
     }

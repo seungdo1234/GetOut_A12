@@ -7,7 +7,11 @@ public class ZapperEventHandler : SpecialWeaponController
     [SerializeField] private Zapper zapperProjectile;
 
     private AutoBasicAttackHandler autoBasicAttackHandler;
-    [SerializeField]private float lazerTime;
+    
+    [SerializeField] private float maxFireDuration = 50.0f;
+    private float bulletCountPerSecond;
+    private Coroutine fireZapperCoroutine;
+    
     protected override void Awake()
     {
         base.Awake();
@@ -18,7 +22,7 @@ public class ZapperEventHandler : SpecialWeaponController
     {
         base.OnEnable();
         topDownController.OnSpecialFireEvent += ZapperFireEvent;
-        lazerTime = CurBulletCount;
+        bulletCountPerSecond = CurBulletCount / maxFireDuration;
     }
 
     private void ZapperFireEvent(bool isPress)
@@ -27,7 +31,9 @@ public class ZapperEventHandler : SpecialWeaponController
         if (anim.GetBool(isSpecialFire) || !isDelay)
         {
             anim.SetBool(isSpecialFire, isPress);
-            StartCoroutine(WaitSpecialWeaponDelayTime());
+
+            StopFireZapperCoroutine();
+            fireZapperCoroutine = StartCoroutine(WaitSpecialWeaponDelayTime());
         }
     }
 
@@ -47,23 +53,33 @@ public class ZapperEventHandler : SpecialWeaponController
 
     private IEnumerator FireLaserCoroutine()
     {
+        WaitForSeconds wait = new WaitForSeconds(0.01f);
+        
         while (zapperProjectile.gameObject.activeSelf)
-        {
-            lazerTime -= Time.deltaTime;
-            if (lazerTime < 0)
+        { 
+            CurBulletCount --;
+            if (CurBulletCount < 0)
             {
                 DisableZapper();
                 topDownController.OnSpecialFireEvent -= ZapperFireEvent;
                 gameObject.SetActive(false);
                 break;
             }
-            yield return null;
+            yield return wait;
         }
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-        StopCoroutine(FireLaserCoroutine());
+        StopFireZapperCoroutine();
+    }
+
+    private void StopFireZapperCoroutine()
+    {
+        if (fireZapperCoroutine != null)
+        {
+            StopCoroutine(fireZapperCoroutine);
+        }
     }
 }

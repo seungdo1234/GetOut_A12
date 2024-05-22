@@ -254,12 +254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     MoveSpeed: 5
-    AtkDelay: 0.5
     AtkDamage: 1
-    MaxHealth: 100
-    BulletNum: 1
-    BulletAngle: 0
-    BulletSpeed: 7
+    MaxHealth: 6
     EFlightStatus: 0
     BulletAnimator: {fileID: 9100000, guid: a1f64fc3360f66b478b2ca82b7e7b3ba, type: 2}
   statModifiers: []
@@ -283,7 +279,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87775265348895361}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3771a69bb2511b5489864299c6be4ec2, type: 3}
   m_Name: 
@@ -292,6 +288,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
+  attackSO: {fileID: 11400000, guid: 8f90e9d19fadd594bbbf13f1db3c5bc1, type: 2}
 --- !u!114 &6933762188987577298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,6 +618,7 @@ MonoBehaviour:
     weaponAtkDelay: 3
     weaponSpeed: 5
     bulletAnimator: {fileID: 9100000, guid: d7192d52b7948eb4f812ae36e9d22392, type: 2}
+  specialWeaponUIHandler: {fileID: 0}
   <CurBulletCount>k__BackingField: 0
 --- !u!1 &3836976047930037494
 GameObject:
@@ -972,6 +970,7 @@ MonoBehaviour:
     weaponAtkDelay: 3
     weaponSpeed: 7
     bulletAnimator: {fileID: 9100000, guid: c3ff00b7808d46b4993e68546ed5f2c1, type: 2}
+  specialWeaponUIHandler: {fileID: 0}
   <CurBulletCount>k__BackingField: 0
 --- !u!1 &5790120838495240379
 GameObject:
@@ -1126,16 +1125,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specialWeaponData:
     weaponType: 3
-    atkPercent: 2
+    atkPercent: 5
     weaponPivots: []
-    bulletCount: 5
+    bulletCount: 500
     bulletsPerShot: 0
-    weaponAtkDelay: 1.5
+    weaponAtkDelay: 2
     weaponSpeed: 0
     bulletAnimator: {fileID: 0}
+  specialWeaponUIHandler: {fileID: 0}
   <CurBulletCount>k__BackingField: 0
   zapperProjectile: {fileID: 8564107690533878126}
-  lazerTime: 0
+  maxFireDuration: 5
 --- !u!1 &7259705401561806108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,7 +1270,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 95e72852a0852c04bb9403e58112218a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1469,6 +1469,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 212358024886486048}
     m_Modifications:
+    - target: {fileID: 4524220121122766893, guid: d68ab9a631ce844419d459f851941164, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524220121122766893, guid: d68ab9a631ce844419d459f851941164, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5811455400846564747, guid: d68ab9a631ce844419d459f851941164, type: 3}
       propertyPath: m_Name
       value: ZapperProjectile
