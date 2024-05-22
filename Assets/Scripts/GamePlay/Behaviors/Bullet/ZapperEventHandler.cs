@@ -52,6 +52,7 @@ public class ZapperEventHandler : SpecialWeaponController
             lazerTime -= Time.deltaTime;
             if (lazerTime < 0)
             {
+                DisableZapper();
                 topDownController.OnSpecialFireEvent -= ZapperFireEvent;
                 gameObject.SetActive(false);
                 break;
