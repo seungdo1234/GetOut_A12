@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 
 public class TopDownShooting : MonoBehaviour
@@ -6,10 +6,11 @@ public class TopDownShooting : MonoBehaviour
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
     protected FlightStatHandler flightStat;
-
+    protected Rigidbody2D rigid;
     protected void Awake()
     {
         flightStat = GetComponent<FlightStatHandler>();
+        rigid = GetComponent<Rigidbody2D>();
     }
 
     protected void Shooting(FlightStat flightStat)
@@ -52,6 +53,27 @@ public class TopDownShooting : MonoBehaviour
     {
         // 정해진 각도로 바로 발사
         SpawnBullet(flightStat, angle);
+    }
+
+    protected void Bombing(FlightStat flightStat, float bombSpeed, float explodeDelay)
+    {
+        Bomb bomb = GameManager.Instance.Pool.SpawnFromPool(EPoolObjectType.Bomb).ReturnMyConponent<Bomb>();
+        if (bomb != null)
+        {
+            bomb.transform.position = weaponPivot.position;
+            bomb.DropBomb(bombSpeed);
+
+            StartCoroutine(DelayShooting(explodeDelay, flightStat, bomb.transform));
+                
+        }
+    }
+
+    IEnumerator DelayShooting(float explodeDelay, FlightStat flightStat, Transform bomb)
+    {
+        WaitForSecondsRealtime wait = new WaitForSecondsRealtime(explodeDelay);
+        yield return wait;
+        Shooting(flightStat, bomb.transform);
+        bomb.gameObject.SetActive(false);
     }
 
     private void SpawnBullet(FlightStat flightStat, float angle)
