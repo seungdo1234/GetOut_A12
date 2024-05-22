@@ -7,7 +7,8 @@ public class TopDownShooting : MonoBehaviour
 {
     [SerializeField] private Transform weaponPivot;
     [SerializeField] private LayerMask targetLayer;
-    
+    public LayerMask TargetLayer => targetLayer;
+
     protected FlightStatHandler flightStat;
     protected Rigidbody2D rigid;
     protected virtual void Awake()
