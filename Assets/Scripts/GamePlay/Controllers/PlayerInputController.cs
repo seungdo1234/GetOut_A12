@@ -10,7 +10,7 @@ public class PlayerInputController : TopDownController
     
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (FlightDataManager.Instance.PlayerFlightStat.CurrentStat.EFlightStatus == EFlightStatus.Dead)
+        if (FlightDataManager.Instance.PlayerFlightStat.CurrentStat.EFlightStatus == EFlightStatus.Dead  ||   GameManager.Instance.GameClearUI.activeSelf)
         {
             return;
         }

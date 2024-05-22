@@ -116,6 +116,6 @@ public class PhaseManager : MonoBehaviour
 
     private void StageClear()
     {
-        throw new NotImplementedException();
+        GameManager.Instance.GameClearUI.SetActive(true);
     }
 }

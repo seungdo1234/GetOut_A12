@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public PoolManager Pool => poolManager;
     public PhaseManager PhaseManager => phaseManager;
     [field:SerializeField]public GameObject GameOverUI { get; private set; }
+    [field:SerializeField]public GameObject GameClearUI { get; private set; }
     private void Awake()
     {
         if (Instance == null)
