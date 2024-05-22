@@ -999,6 +999,10 @@ PrefabInstance:
       propertyPath: specialWeaponUIHandler
       value: 
       objectReference: {fileID: 570427110}
+    - target: {fileID: 7015148816433348332, guid: cf1ba16130ec3fd42b1e45884e44aef8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
