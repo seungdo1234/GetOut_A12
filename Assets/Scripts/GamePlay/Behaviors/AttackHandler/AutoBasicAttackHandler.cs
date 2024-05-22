@@ -28,9 +28,7 @@ public class AutoBasicAttackHandler : TopDownShooting
 
         while (flightStat.CurrentStat.EFlightStatus == EFlightStatus.Alive)
         {
-            AudioManager.instance.PlaySfx(Sfx.PlayerAtk);
             Shooting(attackSO);
-
             yield return wait;
         }
     }

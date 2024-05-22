@@ -38,7 +38,7 @@ public enum EHeartType
     Full, Half, Empty
 }
 
-public enum Sfx { PlayerAtk, FlightExplosion, PlayerHit, PlayerMove,  ItemCon, ItemEqu , Zapper } //적군 타격, 플레이어 공격, 플레이어 타격, 소비 아이템 장착, 무기 아이템 장착
+public enum Sfx { EnemyHit, FlightExplosion, PlayerHit, PlayerMove,  ItemCon, ItemEqu , Zapper } //적군 타격, 플레이어 공격, 플레이어 타격, 소비 아이템 장착, 무기 아이템 장착
 public enum Bgm { StartBgm, MainBgm, BossBgm } //시작 브금, 메인 브금, 보스 등장 BGM
 
 public enum EConsumableItemType

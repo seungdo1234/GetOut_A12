@@ -17,6 +17,7 @@ public class EnemyAnimationController : FlightAnimationController
 
     private void TakeDamage()
     {
+        AudioManager.instance.PlaySfx(Sfx.EnemyHit);
         anim.SetTrigger(Hit);
     }
     

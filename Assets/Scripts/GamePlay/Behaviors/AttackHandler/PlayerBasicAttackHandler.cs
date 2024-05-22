@@ -30,7 +30,6 @@ public class PlayerBasicAttackHandler : TopDownShooting
         {
             if (!isBasicAttackLock)
             {
-                AudioManager.instance.PlaySfx(Sfx.PlayerAtk);
                 Shooting();   
             }
             yield return wait;
