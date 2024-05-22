@@ -26,7 +26,7 @@ public class Item : MonoBehaviour
     {
         if (IsLayerMatched(targetLayer.value, other.gameObject.layer ))
         {
-            ItemManager.Instance.SpecialWeaponHandler.EquipSpecialWeapon(itemType);
+            ItemManager.Instance.SpecialWeaponEquipHandler.EquipSpecialWeapon(itemType);
             Destroy(this.gameObject);
         }
     }

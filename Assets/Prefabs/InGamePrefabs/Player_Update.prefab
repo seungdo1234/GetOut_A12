@@ -256,7 +256,7 @@ MonoBehaviour:
     MoveSpeed: 5
     AtkDelay: 0.5
     AtkDamage: 1
-    MaxHealth: 100
+    MaxHealth: 6
     BulletNum: 1
     BulletAngle: 0
     BulletSpeed: 7
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87775265348895361}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3771a69bb2511b5489864299c6be4ec2, type: 3}
   m_Name: 
@@ -621,6 +621,7 @@ MonoBehaviour:
     weaponAtkDelay: 3
     weaponSpeed: 5
     bulletAnimator: {fileID: 9100000, guid: d7192d52b7948eb4f812ae36e9d22392, type: 2}
+  specialWeaponUIHandler: {fileID: 0}
   <CurBulletCount>k__BackingField: 0
 --- !u!1 &3836976047930037494
 GameObject:
@@ -972,6 +973,7 @@ MonoBehaviour:
     weaponAtkDelay: 3
     weaponSpeed: 7
     bulletAnimator: {fileID: 9100000, guid: c3ff00b7808d46b4993e68546ed5f2c1, type: 2}
+  specialWeaponUIHandler: {fileID: 0}
   <CurBulletCount>k__BackingField: 0
 --- !u!1 &5790120838495240379
 GameObject:
@@ -1128,14 +1130,15 @@ MonoBehaviour:
     weaponType: 3
     atkPercent: 2
     weaponPivots: []
-    bulletCount: 5
+    bulletCount: 500
     bulletsPerShot: 0
     weaponAtkDelay: 1.5
     weaponSpeed: 0
     bulletAnimator: {fileID: 0}
+  specialWeaponUIHandler: {fileID: 0}
   <CurBulletCount>k__BackingField: 0
   zapperProjectile: {fileID: 8564107690533878126}
-  lazerTime: 0
+  maxFireDuration: 5
 --- !u!1 &7259705401561806108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,6 +1472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 212358024886486048}
     m_Modifications:
+    - target: {fileID: 4524220121122766893, guid: d68ab9a631ce844419d459f851941164, type: 3}
+      propertyPath: m_DrawMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5811455400846564747, guid: d68ab9a631ce844419d459f851941164, type: 3}
       propertyPath: m_Name
       value: ZapperProjectile
@@ -1589,7 +1596,7 @@ BoxCollider2D:
     oldSize: {x: 0.8888889, y: 0.8888889}
     newSize: {x: 0.8888889, y: 0.8888889}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
