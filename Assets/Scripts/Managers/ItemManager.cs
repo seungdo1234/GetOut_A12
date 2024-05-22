@@ -14,7 +14,7 @@ public class ItemManager : MonoBehaviour
     [SerializeField] private GameObject Rockets;
     [SerializeField] private GameObject Zapper;
 
-    public SpecialWeaponHandler SpecialWeaponHandler { get; private set; }
+    public SpecialWeaponEquipHandler SpecialWeaponEquipHandler { get; private set; }
     private void Awake()
     {
         if (Instance == null)
@@ -29,7 +29,7 @@ public class ItemManager : MonoBehaviour
 
     private void Start()
     {
-        SpecialWeaponHandler = FlightDataManager.Instance.PlayerFlightStat.GetComponent<SpecialWeaponHandler>();
+        SpecialWeaponEquipHandler = FlightDataManager.Instance.PlayerFlightStat.GetComponent<SpecialWeaponEquipHandler>();
     }
 
     // 매개 변수로 몬스터 위치 불러와야되나?

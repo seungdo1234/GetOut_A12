@@ -30,3 +30,8 @@ public enum EWeaponType
     Zapper,
     BigSpaceGun
 }
+
+public enum EHeartType
+{
+    Full, Half, Empty
+}
