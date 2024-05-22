@@ -1117,6 +1117,10 @@ PrefabInstance:
       propertyPath: channels
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 8884508321191563154, guid: aaa23335d99878f4ebd56df8cb221381, type: 3}
+      propertyPath: sfxClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 54d0f355d017fb74c9d3589af96ac4cf, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
